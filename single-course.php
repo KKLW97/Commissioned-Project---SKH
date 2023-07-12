@@ -1,14 +1,16 @@
 <?php
-get_header();
+get_header(); ?>
+<img src="£" alt="lash academy banner">
+<?php
 get_the_title();
 ?>
 
 <div>
     <?php 
-    $today = date('Ymd')
+    $today = date('Ymd');
     $course = new WP_Query(array(
-        'post_type'=>'course',
-    ))
+        'post_type'=>'course'
+    ));
     ?>
 </div>
 
