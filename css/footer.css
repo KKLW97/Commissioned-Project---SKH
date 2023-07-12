@@ -1,0 +1,14 @@
+.footer_top {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a b";
+}
+
+.footer_top_left {
+    grid-area: a;
+}
+
+.footer_top_right {
+    grid-area: b;
+    grid-template-rows: 1fr 1fr 1fr;
+}
