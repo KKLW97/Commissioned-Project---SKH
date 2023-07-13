@@ -9,4 +9,22 @@ function skh_theme_files () {
 }
 
 add_action('wp_enqueue_scripts', 'skh_theme_files');
+
+function skh_adjust_queries($query){
+    if(!is_admin() AND is_post_type_archive('class') AND is_main_query()) {
+        $query->set('meta_key', 'class_date');
+        $query->set('orderby', 'meta_value_num');
+        $query->set('order', 'ASC');
+        $query->set('meta_query', array(
+            array(
+                'key' => 'class_date',
+                'compare' => '>=',
+                'value' => date('Ymd'),
+                'type' => 'numeric'
+            )
+        ));
+    }
+}
+add_action('pre_get_posts', 'skh_adjust_queries');
+
 ?>

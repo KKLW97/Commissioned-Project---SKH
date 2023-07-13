@@ -24,7 +24,9 @@
     ));
 
     while($upcomingClasses->have_posts()){
-        $upcomingClasses->the_post(); ?>
+        $upcomingClasses->the_post(); 
+        get_template_part('template-parts/content', 'class');
+        ?>
         <div>
             <img src="#" alt="">
             <h3> UPCOMING CLASS </h3>
