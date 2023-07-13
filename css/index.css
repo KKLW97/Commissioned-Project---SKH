@@ -64,7 +64,7 @@
    */
   
   pre {
-    font-family: monospace, monospace; /* 1 */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* 1 */
     font-size: 1em; /* 2 */
   }
   
@@ -107,7 +107,7 @@
   code,
   kbd,
   samp {
-    font-family: monospace, monospace; /* 1 */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* 1 */
     font-size: 1em; /* 2 */
   }
   
