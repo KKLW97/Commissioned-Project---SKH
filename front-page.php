@@ -8,11 +8,12 @@
 <section class="update_section">
     <?php 
     $upcomingClasses = new WP_Query(array(
-        'posts_per_page' => 2,
-        'post_type' => 'class'
-        // 'meta_key' => 'class_date',
-        // 'orderby' => 'meta_value_num',
-        // 'order' => "ASC",
+        'posts_per_page' => -1,
+        'post_type' => 'class',
+        'meta_key' => 'class_date',
+        'orderby' => 'meta_value_num',
+        'order' => 'ASC'
+        // LOOK INTO THE CLASS DATE 
         // 'meta_query' => array(
         //     array(
         //         'key' => 'class_date',
@@ -29,7 +30,7 @@
         ?>
         <div>
             <img src="#" alt="">
-            <?php echo '<h3> UPCOMING ' . get_the_title() .' </h3>' ?>
+            <?php echo '<h3> UPCOMING: ' . get_the_title() .' </h3>' ?>
             <!-- rolling text 
             <p><?php echo the_excerpt(); ?></p>
             -->
