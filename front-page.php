@@ -9,18 +9,18 @@
     <?php 
     $upcomingClasses = new WP_Query(array(
         'posts_per_page' => 2,
-        'post_type' => 'class',
-        'meta_key' => 'class_date',
-        'orderby' => 'meta_value_num',
-        'order' => "ASC",
-        'meta_query' => array(
-            array(
-                'key' => 'class_date',
-                'compare' => '>=',
-                'value' => date('Ymd'),
-                'type' => 'numeric'
-            )
-        )
+        'post_type' => 'class'
+        // 'meta_key' => 'class_date',
+        // 'orderby' => 'meta_value_num',
+        // 'order' => "ASC",
+        // 'meta_query' => array(
+        //     array(
+        //         'key' => 'class_date',
+        //         'compare' => '>=',
+        //         'value' => date('Ymd'),
+        //         'type' => 'numeric'
+        //     )
+        // )
     ));
 
     while($upcomingClasses->have_posts()){
@@ -29,9 +29,10 @@
         ?>
         <div>
             <img src="#" alt="">
-            <h3> UPCOMING CLASS </h3>
-            <!-- rolling text -->
+            <?php echo '<h3> UPCOMING ' . get_the_title() .' </h3>' ?>
+            <!-- rolling text 
             <p><?php echo the_excerpt(); ?></p>
+            -->
         </div>
     <?php }
 
