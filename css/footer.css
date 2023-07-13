@@ -8,7 +8,45 @@
     grid-area: a;
 }
 
+.footer_top_left > img {
+    display: flex;
+    place-self: center;
+}
+
 .footer_top_right {
+    display: grid;
     grid-area: b;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-areas: "c d e";
+}
+
+.location_london {
+    grid-area: c;
+    margin: 10px;
+    display: flex;
+    place-self: center;
+}
+
+.location_dubai {
+    grid-area: d;
+    margin: 10px;
+    display: flex;
+    place-self: center;
+}
+
+.contact_section{
+    grid-area: e;
+    margin: 10px;
+}
+
+.social_media{
+    grid-area: e;
+    display: flex;
+    place-self: end;
+}
+
+.footer_bottom {
+    background-color: rosybrown;
+    color: white;
+    text-align: center;
 }
