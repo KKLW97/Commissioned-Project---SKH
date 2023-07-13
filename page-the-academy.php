@@ -11,12 +11,12 @@
 
 <section class="course_section">
   <div class="course_component">
-    <img src="assets/product.png" alt="Picture of micro cotton buds that are pink and blue">
+    <img src="<?php echo get_theme_file_uri("assets/product.png") ?>" alt="Picture of micro cotton buds that are pink and blue">
     <h4>Lash Academy</h4>
     <button><a href='<?php echo site_url('/courses/lash-academy/');?>'>Learn More</a></button>
   </div>
   <div class="course_component">
-  <img src="assets/product.png" alt="Picture of micro cotton buds that are pink and blue">
+  <img src="<?php echo get_theme_file_uri("assets/product.png") ?>" alt="Picture of micro cotton buds that are pink and blue">
     <h4>Brow Academy</h4>
     <button><a href='<?php echo site_url('/courses/brow-academy/');?>'>Learn More</a></button>
   </div>
