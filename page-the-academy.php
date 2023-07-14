@@ -24,13 +24,28 @@
 </section>
 
 <h3>OUR TRAINER</h3>
-
 <section class="trainer_section">
-  <img src="#" alt="Director's image">
-  <h4>SUMERA HUSSEIN</h4>
-  <h5>CEO & FOUNDER</h5>
-  <p><?php echo get_field('our_trainer') ?></p>
+    <?php 
+    $trainers = new WP_Query(array(
+        'posts_per_page' => -1,
+        'post_type' => 'trainers'
+      ));
+
+    while($trainers->have_posts()){
+        $trainers->the_post(); 
+        // get_template_part('template-parts/content', 'trainers'); //refactor later to simplify the code below into a content-class.php file within a template-parts folder
+        ?>
+        <div>
+            <img src="<?php the_post_thumbnail_url('trainerPortrait'); ?>" alt="Directors image">
+            <h3><?php echo get_the_title(); ?></h3>
+            <h5><?php echo get_field('company_position'); ?></h5>
+            <p><?php the_content(); ?></p>
+        </div>
+    <?php }
+
+    ?>
 </section>
+
 
 <h3>TESTIMONIALS</h3>
 <!-- remember to add shop link here after testimonials -->

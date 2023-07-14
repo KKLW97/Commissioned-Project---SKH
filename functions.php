@@ -13,6 +13,13 @@ function skh_theme_files () {
 
 add_action('wp_enqueue_scripts', 'skh_theme_files');
 
+function skh_features() {
+    add_theme_support('post-thumbnails');
+    add_image_size('trainerPortrait', 480, 650, true);
+}
+
+add_action('after_setup_theme', 'skh_features');
+
 function skh_adjust_queries($query){
     if(!is_admin() AND is_post_type_archive('class') AND is_main_query()) {
         $query->set('meta_key', 'class_date');
@@ -26,6 +33,12 @@ function skh_adjust_queries($query){
                 'type' => 'numeric'
             )
         ));
+    }
+
+    if(!is_admin() AND is_post_type_archive('trainers') AND is_main_query()) {
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
+        $query->set('posts_per_page', -1);
     }
 }
 add_action('pre_get_posts', 'skh_adjust_queries');
