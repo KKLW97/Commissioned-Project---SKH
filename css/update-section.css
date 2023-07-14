@@ -9,7 +9,7 @@
     position: relative;
 }
 
-.upcoming_section > h3 {
+.upcoming_section_before > h3 {
     position: absolute;
     color: #ffffff;
     width: fit-content;
@@ -21,7 +21,7 @@
     /* transform: translate(-50%, -50%) */
 }
 
-.upcoming_section > p {
+.upcoming_section_before > h4 {
     position: absolute;
     color: white;
     width: fit-content;
@@ -32,22 +32,56 @@
     /* transform: translate(-50%, -50%) */
 }
 
-.upcoming_section > button {
+.upcoming_section_before > button {
     position: absolute;
+    background-color: #601E12;
     color: white;
     width: fit-content;
     margin: 0px;
     z-index: 1;
     top: 60%;
-    left: 40%;
+    left: 39%;
+    font-weight: bold;
+    font-stretch: ultra-condensed;
+    border-radius: 5px;
     /* transform: translate(-50%, -50%) */
 }
-
+.upcoming_section_before > img {
+    object-fit: cover;
+    height: 250px;
+    width: 90%;
+    opacity: 70%;
+    display: inline-block;
+    border-radius: 25px;
+}
 .upcoming_section > img {
     object-fit: cover;
     height: 250px;
     width: 90%;
     opacity: 70%;
-    display: block;
+    display: inline-block;
     border-radius: 25px;
 }
+
+.hide {
+    display: none;
+    position: absolute;
+    color: white;
+    width: fit-content;
+    margin: 0px;
+    z-index: 1;
+    top: 45%;
+    left: 35%;
+}
+
+.upcoming_section_before:hover + .hide {
+    display: block;
+    position: absolute;
+    color: white;
+    width: fit-content;
+    margin: 0px;
+    z-index: 1;
+    top: 50%;
+    left: 35%;
+}
+

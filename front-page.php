@@ -29,13 +29,20 @@
         get_template_part('template-parts/content', 'class');
         ?>
         <div class="upcoming_section">
-            <img src=<?php echo get_theme_file_uri('assets/product.png'); ?> alt="">
-            <?php echo '<h3> UPCOMING: ' . get_the_title() .' </h3>' ?>
-            <!-- rolling text -->
-            <p><?php echo the_excerpt(); ?></p>
-            <button><a href="#">Learn More</a></button>
-            
+            <div class="upcoming_section_before">
+                <img src=<?php echo get_theme_file_uri('assets/product.png'); ?> alt="">
+            <!-- <div class="upcoming_section_contents"> -->
+                <?php echo '<h3> UPCOMING: ' . get_the_title() .' </h3>' ?>
+                <h4><?php echo the_time('F j Y g:i a'); ?></h4> 
+                <!-- rolling text -->
+                
+            </div>
+            <!-- <button>Learn More</button> -->
+             <div class="hide">
+                <p><?php echo the_excerpt(); ?></p>
+            </div>
         </div>
+       
     <?php }
 
     ?>
