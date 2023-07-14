@@ -1,0 +1,53 @@
+.update_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+.upcoming_section {
+    min-height: 200px;
+    height: fit-content;
+    position: relative;
+}
+
+.upcoming_section > h3 {
+    position: absolute;
+    color: #ffffff;
+    width: fit-content;
+    font-size: 20px;
+    margin: 0px;
+    z-index: 1;
+    top: 30%;
+    left: 25%;
+    /* transform: translate(-50%, -50%) */
+}
+
+.upcoming_section > p {
+    position: absolute;
+    color: white;
+    width: fit-content;
+    margin: 0px;
+    z-index: 1;
+    top: 45%;
+    left: 35%;
+    /* transform: translate(-50%, -50%) */
+}
+
+.upcoming_section > button {
+    position: absolute;
+    color: white;
+    width: fit-content;
+    margin: 0px;
+    z-index: 1;
+    top: 60%;
+    left: 40%;
+    /* transform: translate(-50%, -50%) */
+}
+
+.upcoming_section > img {
+    object-fit: cover;
+    height: 250px;
+    width: 90%;
+    opacity: 70%;
+    display: block;
+    border-radius: 25px;
+}
