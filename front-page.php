@@ -65,8 +65,6 @@
     </div>
 </section>
 
-<!-- Kelly delete this line when you see it -->
-
 <?php 
     get_footer();
 ?>
