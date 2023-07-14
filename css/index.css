@@ -24,6 +24,7 @@
     margin: 0;
     padding-left: 50px;
     padding-right: 50px; /* talk to kelly about this*/
+    font-family: 'Montserrat';
   }
   
   /**
@@ -65,6 +66,7 @@
   
   pre {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* 1 */
+    /* font-family: monospace, monospace; 1 */
     font-size: 1em; /* 2 */
   }
   
@@ -108,6 +110,7 @@
   kbd,
   samp {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* 1 */
+    /* font-family: monospace, monospace; 1 */
     font-size: 1em; /* 2 */
   }
   
@@ -164,7 +167,7 @@
   optgroup,
   select,
   textarea {
-    font-family: inherit; /* 1 */
+    /* font-family: inherit; 1 */
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
@@ -352,4 +355,9 @@
   
   .glide{position:relative;width:100%;box-sizing:border-box}.glide *{box-sizing:inherit}.glide__track{overflow:hidden}.glide__slides{position:relative;width:100%;list-style:none;backface-visibility:hidden;transform-style:preserve-3d;touch-action:pan-Y;overflow:hidden;padding:0;white-space:nowrap;display:flex;flex-wrap:nowrap;will-change:transform}.glide__slides--dragging{user-select:none}.glide__slide{width:100%;height:100%;flex-shrink:0;white-space:normal;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}.glide__slide a{user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}.glide__arrows{-webkit-touch-callout:none;user-select:none}.glide__bullets{-webkit-touch-callout:none;user-select:none}.glide--rtl{direction:rtl}
   
-  
+  @font-face { 
+    font-family: 'Montserrat'; 
+    font-style: normal;
+    font-weight: normal;
+    src: local('fonts/Montserrat/static/Montserrat-Regular.ttf'), url('Montserrat-Regular.ttf') format('tff');
+  }

@@ -8,14 +8,18 @@
 
 <h3>OUR COURSES</h3>
 
+
 <section class="course_section">
-  <div>
-    <h4>Lash Academy</h4>
-    <button>Learn More</button>
+  <div class="course_component">
+      <!-- <img src="<?php echo get_theme_file_uri("assets/product.png") ?>" alt="Picture of micro cotton buds that are pink and blue"> -->
+      <h4>Lash Academy</h4>
+      <button><a href='<?php echo site_url('/courses/lash-academy/');?>'>Learn More</a></button>
+    
   </div>
-  <div>
+  <div class="course_component">
+  <img src="<?php echo get_theme_file_uri("assets/product.png") ?>" alt="Picture of micro cotton buds that are pink and blue">
     <h4>Brow Academy</h4>
-    <button>Learn More</button>
+    <button><a href='<?php echo site_url('/courses/brow-academy/');?>'>Learn More</a></button>
   </div>
 </section>
 
@@ -25,12 +29,12 @@
   <img src="#" alt="Director's image">
   <h4>SUMERA HUSSEIN</h4>
   <h5>CEO & FOUNDER</h5>
-  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim </p>
+  <p><?php echo get_field('our_trainer') ?></p>
 </section>
 
 <h3>TESTIMONIALS</h3>
-
 <!-- remember to add shop link here after testimonials -->
+
 <?php 
   get_footer();
 ?>
