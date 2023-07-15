@@ -21,8 +21,17 @@
 
           <nav>
             <ul>
-              <li <?php if(is_page('updates')) echo 'class="current_menu_item"' ?>><a href="#"> Updates </a></li>
-              <li <?php if(is_page('london')) echo 'class="current_menu_item"' ?>><a href="#"> London </a></li>
+              <li <?php if(is_page('updates')) echo 'class="current_menu_item"' ?>><a href="#update_section"> Updates </a></li>
+              <div class="dropdown_menu">
+                <li <?php if(is_page('london')) echo 'class="current_menu_item"' ?>><a href="#"> London </a></li>
+                  <div class="dropdown-content">
+                    <a href="#">Weight Loss Clinic</a>
+                    <a href="#">Beauty Clinic</a>
+                    <a href="#">Lash Bar</a>
+                  </div>
+              </div>
+                          
+              
               <li <?php if(is_page('dubai')) echo 'class="current_menu_item"' ?>><a href="#"> Dubai </a></li>
               <li <?php if(is_page('shop')) echo 'class="current_menu_item"' ?>><a href="#"> Shop </a></li>
               <li <?php if(is_page('team')) echo 'class="current_menu_item"' ?>><a href="#"> Team </a></li>
