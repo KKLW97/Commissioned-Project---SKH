@@ -1,13 +1,10 @@
-<?php
-  get_header();
-?>
+<?php get_header(); ?>
 
-<h2> <?php echo get_the_title(); ?> </h2>
+<h2 class="center"> <?php echo get_the_title(); ?> </h2>
 
 <p>Add hero slider/static image</p> 
 
-<h3>OUR COURSES</h3>
-
+<h3 class="center"> OUR COURSES </h3>
 
 <section class="course_section">
   <div class="course_component">
@@ -23,7 +20,7 @@
   </div>
 </section>
 
-<h3>OUR TRAINER</h3>
+<h3 class="center"> OUR TRAINER </h3>
 <section class="trainer_section">
     <?php 
     $trainers = new WP_Query(array(
@@ -47,9 +44,7 @@
 </section>
 
 
-<h3>TESTIMONIALS</h3>
+<h3 class="center"> TESTIMONIALS </h3>
 <!-- remember to add shop link here after testimonials -->
 
-<?php 
-  get_footer();
-?>
+<?php get_footer(); ?>

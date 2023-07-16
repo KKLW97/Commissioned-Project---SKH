@@ -6,7 +6,8 @@ function skh_theme_files () {
     wp_enqueue_style('testimonial_css', get_theme_file_uri('css/testimonial.css'));
     wp_enqueue_style('footer_css', get_theme_file_uri('css/footer.css'));
     wp_enqueue_style('general_css', get_theme_file_uri('css/general.css'));
-    wp_enqueue_style('the_academy_css', get_theme_file_uri('css/the-academy.css'));
+    wp_enqueue_style('academy_css', get_theme_file_uri('css/academy.css'));
+    wp_enqueue_style('front_page_css', get_theme_file_uri('css/front-page.css'));
     wp_enqueue_style('montserrat_font', '//fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&family=Roboto:wght@100&display=swap');
 
 }
