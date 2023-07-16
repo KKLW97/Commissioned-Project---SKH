@@ -25,7 +25,8 @@
 
               <div class="dropdown_menu">
                 <li <?php if(is_page('london')) echo 'class="current_menu_item list_styling"' ?>><a> London </a>
-                  <div class="dropdown-content">
+                  <i class="fa fa-caret-down" style="font-size: 17px"></i>  
+                <div class="dropdown-content">
                     <a href="<?php echo site_url('/service_categories/weight-loss-clinic/');?>">Weight Loss Clinic</a>
                     <a href="<?php echo site_url('/service_categories/beauty-clinic/');?>">Beauty Clinic</a>
                     <a href="<?php echo site_url('/service_categories/lash-bar/');?>">Lash Bar</a>
@@ -35,7 +36,8 @@
               
               <div class="dropdown_menu">
                 <li <?php if(is_page('dubai')) echo 'class="current_menu_item list_styling"' ?>><a href="#"> Dubai </a>
-                  <div class="dropdown-content">
+                  <i class="fa fa-caret-down" style="font-size: 17px"></i>
+                <div class="dropdown-content">
                     <a href="<?php echo site_url('academy/');?>"> SKH Academy </a>
                     <a href="<?php echo site_url('/courses/lash-academy/');?>"> Lash Academy </a>
                     <a href="<?php echo site_url('/courses/brow-academy/');?>"> Brow Academy </a>
