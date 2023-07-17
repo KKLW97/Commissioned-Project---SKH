@@ -2,6 +2,7 @@ header {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-areas: "a b";
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .center {
@@ -24,6 +25,7 @@ nav {
   grid-area: b;
   font-size: 60px;
   overflow: hidden;
+  padding: 0px 50px 0px 0px;
 }
 
 ul {
@@ -68,6 +70,7 @@ li a:hover {
   background-color: #FFFFFF;
   min-width: 20px;
   text-align: left;
+  padding: 0px 20px 0px 5px;
 }
 
 .dropdown-content a {

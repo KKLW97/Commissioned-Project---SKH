@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 5px 50px;
     background-color: #412920;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* background: radial-gradient(ellipse farthest-corner at right bottom, #F6DFE1 0%, #EBBEC4 8%, #C48983 30%, #B76E78 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #F6DFE1 8%, #EBBEC4 25%, #A85F6A 62.5%, #874650 100%); */
   }

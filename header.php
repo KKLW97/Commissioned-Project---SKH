@@ -9,9 +9,9 @@
   <body <?php body_class(); ?>>
       <div class="announcement_bar">
         <ul> 
-          <li>info@skh-london.com</li>
-          <li>+ 44 (0) 20 8810 1717</li>
-          <li>s.k.hbeauty</li>
+          <li> London </li>
+          <li> Dubai </li>
+          <li> Turkey (Coming Soon) </li>
         </ul>
       </div>
       <header>
@@ -21,34 +21,53 @@
 
           <nav>
             <ul>
-              <li <?php if(is_page('updates')) echo 'class="current_menu_item"' ?>><a href="#update_section"> Updates </a></li>
 
-              <div class="dropdown_menu">
-                <li <?php if(is_page('london')) echo 'class="current_menu_item list_styling"' ?>><a> London </a>
-                  <i class="fa fa-caret-down" style="font-size: 17px"></i>  
-                <div class="dropdown-content">
-                    <a href="<?php echo site_url('/service_categories/weight-loss-clinic/');?>">Weight Loss Clinic</a>
-                    <a href="<?php echo site_url('/service_categories/beauty-clinic/');?>">Beauty Clinic</a>
-                    <a href="<?php echo site_url('/service_categories/lash-bar/');?>">Lash Bar</a>
-                  </div>
-                </li>
-              </div>
-              
-              <div class="dropdown_menu">
-                <li <?php if(is_page('dubai')) echo 'class="current_menu_item list_styling"' ?>><a href="#"> Dubai </a>
-                  <i class="fa fa-caret-down" style="font-size: 17px"></i>
-                <div class="dropdown-content">
-                    <a href="<?php echo site_url('academy/');?>"> SKH Academy </a>
+            <div class="dropdown_menu">
+              <li><a href="<?php echo site_url('academy/');?>"> Academy </a>
+                <i class="fa fa-caret-down" style="font-size: 17px"></i>
+                  <div class="dropdown-content">
                     <a href="<?php echo site_url('/courses/lash-academy/');?>"> Lash Academy </a>
                     <a href="<?php echo site_url('/courses/brow-academy/');?>"> Brow Academy </a>
                   </div>
-                </li>
-              </div>
+              </li>
+            </div>
 
-              <li <?php if(is_page('shop')) echo 'class="current_menu_item"' ?>><a href="<?php echo site_url('');?>"> Shop </a></li>
-              <li <?php if(is_page('team')) echo 'class="current_menu_item"' ?>><a href="<?php echo site_url('team/');?>"> Team </a></li>
-              <li <?php if(is_page('contact')) echo 'class="current_menu_item"' ?>><a href="<?php echo site_url('contact-us/');?>"> Contact </a></li>
-              <li <?php if(is_page('book')) echo 'class="current_menu_item"' ?>><a href="https://shorturl.at/BEU06"> Book </a></li>
+            <div class="dropdown_menu">
+              <li><a> Services </a>
+                <i class="fa fa-caret-down" style="font-size: 17px"></i>
+                  <div class="dropdown-content">
+                    <a href="<?php echo site_url('/service_categories/beauty-clinic/');?>"> Beauty Clinic </a>
+                    <a href="<?php echo site_url('/service_categories/lash-bar/');?>"> Lash Bar </a>
+                  </div>
+              </li>
+            </div>
+            
+              <li <?php if(is_page('shop')) echo 'class="current_menu_item"' ?>>
+                <a href="<?php echo site_url('/service_categories/weight-loss-clinic/');?>"> Weight Loss </a>
+              </li>
+
+              <li <?php if(is_page('shop')) echo 'class="current_menu_item"' ?>>
+                <a href="<?php echo site_url('#');?>"> Shop </a>
+              </li>
+
+              <li <?php if(is_page('team')) echo 'class="current_menu_item"' ?>>
+                <a href="<?php echo site_url('team/');?>"> Team </a>
+              </li>
+
+              <li <?php if(is_page('contact')) echo 'class="current_menu_item"' ?>> 
+                <a href="<?php echo site_url('contact-us/');?>"> Contact </a>
+              </li>
+
+              <li <?php if(is_page('book')) echo 'class="current_menu_item"' ?>>
+                <a href="https://shorturl.at/BEU06"> Book </a>
+              </li>
+
+              <li <?php if(is_page('book')) echo 'class="current_menu_item"' ?>>
+                <a href="#">
+                  <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+                </a>
+              </li>
+
             </ul>
           </nav>
       </header>
