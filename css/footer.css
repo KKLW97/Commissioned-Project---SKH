@@ -1,7 +1,7 @@
 .footer_top {
     display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-areas: "a b";
+    grid-template-columns: 20% 20% 60%;
+    grid-template-areas: "a b c";
 }
 
 .footer_top_left {
@@ -15,9 +15,23 @@
 
 .footer_top_right {
     display: grid;
-    grid-area: b;
-    grid-template-columns: 25% 25% 50%;
-    grid-template-areas: "c d e";
+    grid-area: c;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "c d e f"
+    "c d e g";
+}
+
+.footer-nav_list {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* display: flex; */
+}
+
+.footer-nav_list > li {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* display: flex; */
 }
 
 .location_london {
@@ -40,9 +54,27 @@
 }
 
 .social_media{
-    grid-area: e;
+    grid-area: f;
+    /* display: flex;
+    place-self: end; */
+    /* display: grid; */
+    /* grid-template-rows: 10% 90%; */
+    /* grid-template-areas: 
+    "title" 10% 
+    "icons" 90%; */
+}
+
+.footer_headers {
+    /* grid-area: title; */
     display: flex;
-    place-self: end;
+    justify-self:first baseline;
+}
+
+.social_media_icons {
+    grid-area: g;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .footer_bottom {
