@@ -22,8 +22,6 @@
   
   body {
     margin: 0;
-    padding-left: 50px;
-    padding-right: 50px; /* talk to kelly about this*/
     font-family: 'Montserrat';
   }
   
@@ -65,6 +63,7 @@
    */
   
   pre {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* 1 */
     /* font-family: monospace, monospace; 1 */
     font-size: 1em; /* 2 */
   }
@@ -108,6 +107,7 @@
   code,
   kbd,
   samp {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* 1 */
     /* font-family: monospace, monospace; 1 */
     font-size: 1em; /* 2 */
   }
