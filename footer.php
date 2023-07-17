@@ -12,7 +12,7 @@
                 <p> T: 02384923084 </p>
             </div>
             <ul class="social_media">
-            SOCIAL MEDIA ICONS TO BE SORTED OUT
+                <h5>Connect With Us</h5>
                 <li>
                     <a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 </li>
