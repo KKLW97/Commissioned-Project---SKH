@@ -1,39 +1,47 @@
-.black_text{
-    color: #0E1111
+.black_text {
+  color: #0e1111;
 }
 
-.black_background{
-    background-color: #0E1111;
+.black_background {
+  background-color: #0e1111;
 }
 
-.cocoa_text{
-    color: #412920;
+.cocoa_text {
+  color: #412920;
 }
 
-.cocoa_background{
-    background-color: #412920;
+.cocoa_background {
+  background-color: #412920;
 }
 
-.cafeaulait_text{
-    color: #A9846A;
+.cafeaulait_text {
+  color: #a9846a;
 }
 
-.cafeaulait_background{
-    background-color: #A9846A;
+.cafeaulait_background {
+  background-color: #a9846a;
 }
 
-.taupe_text{
-    color: #B98663;
+.taupe_text {
+  color: #b98663;
 }
 
-.taupe_background{
-    background-color: #B98663;
+.taupe_background {
+  background-color: #b98663;
 }
 
-.beige_text{
-    color: #FAF0E6;
+.beige_text {
+  color: #faf0e6;
 }
 
-.beige_background{
-    background-color: #FAF0E6;
+.beige_background {
+  background-color: #faf0e6;
+}
+
+.basic_font {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.center {
+  text-align: center;
 }

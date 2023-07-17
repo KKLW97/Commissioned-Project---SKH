@@ -7,7 +7,7 @@
 <section class="update_section" id="update_section">
     <?php 
     $upcomingClasses = new WP_Query(array(
-        'posts_per_page' => -1,
+        'posts_per_page' => 2,
         'post_type' => 'class',
         'meta_key' => 'class_date',
         'orderby' => 'meta_value_num',
@@ -48,24 +48,24 @@
         
 </section>
 
-<h2 class="center cocoa_text"> TESTIMONIALS </h2>
+<h2 class="center cocoa_text basic_font"> TESTIMONIALS </h2>
 <section class="testimonial_cards">
-    <div class="single_card taupe_background">
+    <div class="single_card cafeaulait_background beige_text">
         <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim" </p>
         <!-- stars to go here -->
         <p style="text-align: center;"> CLIENT NAME </p>
     </div>
-    <div class="single_card taupe_background">
+    <div class="single_card cafeaulait_background beige_text">
         <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor" </p>
         <!-- stars to go here -->
         <p style="text-align: center;"> CLIENT NAME </p>
     </div>
-    <div class="single_card taupe_background">
+    <div class="single_card cafeaulait_background beige_text">
         <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </p>
         <!-- stars to go here -->
         <p style="text-align: center;"> CLIENT NAME </p>
     </div>
-    <div class="single_card taupe_background">
+    <div class="single_card cafeaulait_background beige_text">
         <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" </p>
         <!-- stars to go here -->
         <p style="text-align: center;"> CLIENT NAME </p>
