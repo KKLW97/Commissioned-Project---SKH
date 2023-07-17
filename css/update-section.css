@@ -1,4 +1,7 @@
 .update_section {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
