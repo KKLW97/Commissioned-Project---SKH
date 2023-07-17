@@ -1,0 +1,80 @@
+h2, h3 {
+    text-align: center;
+}
+
+.course_section {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+.course_component {
+    min-height: 250px;
+    min-width: 200px;
+    height: fit-content;
+    position: relative;
+    display: grid;
+    place-content: center;
+}
+
+.course_image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    /* opacity: 90%; */
+}
+
+.course_content {
+    z-index: 1;
+    margin: 30px;
+}
+
+.course_content > h4 {
+    /* position: absolute; */
+    color: white;
+    width: fit-content;
+    margin: 0px;
+    margin-bottom: 10px;
+    /* text-align: center; */
+    z-index: 1;
+    /* top: 45%; */
+    /* left: 35%; */
+    /* transform: translate(-50%, -50%) */
+}
+
+.course_content > button {
+    /* position: absolute; */
+    background-color: #601E12;
+    color: white;
+    width: fit-content;
+    margin: 0px;
+    z-index: 1;
+    /* top: 60%;
+    left: 39%; */
+    font-weight: bold;
+    font-stretch: ultra-condensed;
+    border-radius: 5px;
+    /* transform: translate(-50%, -50%) */
+}
+
+.course_content > button, a {
+    text-decoration: none;
+    color: white;
+}
+
+.course_content > button:hover > a {
+    color: gold;
+}
+
+.course_image > img {
+    object-fit: stretch;
+    height: 250px;
+    width: 100%;
+    opacity: 80%;
+    display: inline-block;
+    border-radius: 25px;
+}

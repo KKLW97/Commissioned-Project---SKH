@@ -1,0 +1,33 @@
+.testimonial_cards{
+    display: flex;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.single_card{
+    margin: 10px 10px;
+    padding: 10px 18px;
+    max-width: 270px;
+    min-width: 270px;
+    max-height: 350px;
+    min-height: 350px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    box-shadow: 5px 5px 0px #412920;
+    border-radius: 25px;
+    display: inline-block;
+    text-align: justify;
+    position: relative;
+    overflow-y: auto;
+}
+
+.single_card::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .single_card::-webkit-scrollbar-track {
+    background: none; 
+  }

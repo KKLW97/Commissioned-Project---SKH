@@ -1,11 +1,10 @@
 <?php 
     get_header();
 ?>
-<img class="hero_image" src="#" alt="">
+<img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" alt="topless man measuring his abdomen">
+<p class="announcement_bar"> ANNOUNCEMENTS: Rolling Text to go here </p>
 
-<p> ANNOUNCEMENTS: Rolling Text to go here </p>
-
-<section class="update_section">
+<section class="update_section" id="update_section">
     <?php 
     $upcomingClasses = new WP_Query(array(
         'posts_per_page' => -1,
@@ -26,7 +25,7 @@
 
     while($upcomingClasses->have_posts()){
         $upcomingClasses->the_post(); 
-        get_template_part('template-parts/content', 'class');
+        // get_template_part('template-parts/content', 'class'); //refactor later to simplify the code below into a content-class.php file within a template-parts folder
         ?>
         <div class="upcoming_section">
             <div class="upcoming_section_before">
@@ -49,27 +48,27 @@
         
 </section>
 
+<h2 class="center cocoa_text"> TESTIMONIALS </h2>
 <section class="testimonial_cards">
-    <h2> TESTIMONIALS </h2>
-    <div>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
+    <div class="single_card taupe_background">
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim" </p>
         <!-- stars to go here -->
-        <p> CLIENT NAME </p>
+        <p style="text-align: center;"> CLIENT NAME </p>
     </div>
-    <div>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
+    <div class="single_card taupe_background">
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor" </p>
         <!-- stars to go here -->
-        <p> CLIENT NAME </p>
+        <p style="text-align: center;"> CLIENT NAME </p>
     </div>
-    <div>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
+    <div class="single_card taupe_background">
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </p>
         <!-- stars to go here -->
-        <p> CLIENT NAME </p>
+        <p style="text-align: center;"> CLIENT NAME </p>
     </div>
-    <div>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
+    <div class="single_card taupe_background">
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" </p>
         <!-- stars to go here -->
-        <p> CLIENT NAME </p>
+        <p style="text-align: center;"> CLIENT NAME </p>
     </div>
 </section>
 
