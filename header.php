@@ -33,7 +33,7 @@
             </div>
 
             <div class="dropdown_menu">
-              <li><a> Services </a>
+              <li <?php if(get_post_type()== 'service-categories') echo 'class="current_menu_item"'?>><a> Services </a>
                 <i class="fa fa-caret-down" style="font-size: 17px"></i>
                   <div class="dropdown-content">
                     <a href="<?php echo site_url('/service_categories/beauty-clinic/');?>"> Beauty Clinic </a>
@@ -54,15 +54,15 @@
                 <a href="<?php echo site_url('team/');?>"> Team </a>
               </li>
 
-              <li <?php if(is_page('contact')) echo 'class="current_menu_item"' ?>> 
+              <li <?php if(is_page('contact-us')) echo 'class="current_menu_item"' ?>> 
                 <a href="<?php echo site_url('contact-us/');?>"> Contact </a>
               </li>
 
-              <li <?php if(is_page('book')) echo 'class="current_menu_item"' ?>>
+              <li>
                 <a href="https://shorturl.at/BEU06"> Book </a>
               </li>
 
-              <li <?php if(is_page('book')) echo 'class="current_menu_item"' ?>>
+              <li>
                 <a href="#">
                   <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
                 </a>
