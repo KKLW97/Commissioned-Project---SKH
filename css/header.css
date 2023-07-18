@@ -77,10 +77,15 @@ li a:hover {
   display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover , .current_menu_item{
   color: #B98663;
 }
 
 .dropdown_menu:hover .dropdown-content {
   display: block;
+}
+
+.current_menu_item > a {
+  color: #B98663;
+  text-decoration: underline;
 }

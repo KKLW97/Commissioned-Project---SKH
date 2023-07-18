@@ -23,7 +23,7 @@
             <ul>
 
             <div class="dropdown_menu">
-              <li><a href="<?php echo site_url('academy/');?>"> Academy </a>
+              <li <?php if(is_page('academy') OR get_post_type()== 'course') echo 'class="current_menu_item"'?>><a href="<?php echo site_url('academy/');?>"> Academy </a>
                 <i class="fa fa-caret-down" style="font-size: 17px"></i>
                   <div class="dropdown-content">
                     <a href="<?php echo site_url('/courses/lash-academy/');?>"> Lash Academy </a>
