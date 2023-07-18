@@ -6,8 +6,8 @@
   <p>By Sumera</p>
 </div>
 <div class="course_price">
-  <p class="actual_price"><?php echo get_field('actual_price'); ?></p>
-  <p class="discount_price"><?php echo get_field('discount_price'); ?></p>
+  <p class="actual_price">£<?php echo get_field('actual_price'); ?></p>
+  <p class="discount_price">£<?php echo get_field('discount_price'); ?></p>
 </div>
 
 <section class="overview">
