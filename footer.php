@@ -25,19 +25,16 @@
                 <h5 class="footer_headers">Connect With Us</h5>
                 <ul class="social_media_icons">
                     <li>
-                        <a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" class="social-color-facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="social-color-tiktok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        <a href="#" class="social-color-google"><i class="fa-brands fa-google" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="social-color-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" class="social-color-instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </div>
