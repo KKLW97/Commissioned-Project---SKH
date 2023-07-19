@@ -48,15 +48,14 @@
         // get_template_part('template-parts/content', 'class'); //refactor later to simplify the code below into a content-class.php file within a template-parts folder
         ?>
         <div class="upcoming_section">
-            <div class="upcoming_section_before">
+            <div class="upcoming_section_image">
                 <img src=<?php echo get_theme_file_uri('assets/product.png'); ?> alt="">
-            <!-- <div class="upcoming_section_contents"> -->
+            </div>
+            <div class="upcoming_section_contents">
                 <?php echo '<h3> UPCOMING: ' . get_the_title() .' </h3>' ?>
                 <h4><?php echo get_field('class_date'); ?></h4> 
-                <!-- rolling text -->
             </div>
-            <!-- <button>Learn More</button> -->
-             <div class="hide">
+            <div class="hide">
                 <p><?php echo the_excerpt(); ?></p>
             </div>
         </div>
