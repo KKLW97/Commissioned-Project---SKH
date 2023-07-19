@@ -11,16 +11,15 @@
         'post_type' => 'class',
         'meta_key' => 'class_date',
         'orderby' => 'meta_value_num',
-        'order' => 'ASC'
-        // LOOK INTO THE CLASS DATE 
-        // 'meta_query' => array(
-        //     array(
-        //         'key' => 'class_date',
-        //         'compare' => '>=',
-        //         'value' => date('Ymd'),
-        //         'type' => 'numeric'
-        //     )
-        // )
+        'order' => 'ASC',
+        'meta_query' => array(
+            array(
+                'key' => 'class_date',
+                'compare' => '>=',
+                'value' => date('Ymd'),
+                'type' => 'numeric'
+            )
+        )
     ));
 
     while($upcomingClasses->have_posts()){
@@ -32,7 +31,7 @@
                 <img src=<?php echo get_theme_file_uri('assets/product.png'); ?> alt="">
             <!-- <div class="upcoming_section_contents"> -->
                 <?php echo '<h3> UPCOMING: ' . get_the_title() .' </h3>' ?>
-                <h4><?php echo the_time('F j Y g:i a'); ?></h4> 
+                <h4><?php echo get_field('class_date'); ?></h4> 
                 <!-- rolling text -->
                 
             </div>
