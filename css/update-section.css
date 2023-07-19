@@ -21,16 +21,15 @@
     position: absolute;
     color: #ffffff;
     width: fit-content;
+    top: 20%;          
     font-size: 20px;
     margin: 0px;
     z-index: 1;
-    top: 30%;
-    left: 25%;
-    /* transform: translate(-50%, -50%) */
 }
 
 .update_content > h4 {
     color: white;
+    top: 60%;
     width: fit-content;
     margin: 0px;
     margin-bottom: 10px;
@@ -74,12 +73,8 @@
     width: fit-content;
     margin: 0px;
     z-index: 1;
-    top: 50%;
-    left: 35%;
     place-self: center;
 }
-
-
 
 .update_component:hover > .update_content {
     display: none;
