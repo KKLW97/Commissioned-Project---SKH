@@ -42,7 +42,11 @@ function skh_adjust_queries($query){
     if(!is_admin() AND is_post_type_archive('trainers') AND is_main_query()) {
         $query->set('orderby', 'title');
         $query->set('order', 'ASC');
-        $query->set('posts_per_page', -1);
+    }
+
+    if(!is_admin() AND is_post_type_archive('announcement') AND is_main_query()) {
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
     }
 
 }
