@@ -85,6 +85,7 @@
 
 <section class="testimonial_cards">
 <?php echo do_shortcode('[grw id="95"]'); ?>
+<?php echo do_shortcode('[grw id="85"]'); ?> <!-- change this later -->
     <div class="single_card cafeaulait_background beige_text">
 
         <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim" </p>

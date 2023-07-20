@@ -12,15 +12,22 @@ function skh_theme_files () {
     wp_enqueue_style('academy_css', get_theme_file_uri('css/academy.css'));
     wp_enqueue_style('front_page_css', get_theme_file_uri('css/front-page.css'));
     wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v6.0.0/css/all.css');
-    wp_enqueue_style('montserrat_font', '//fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&family=Roboto:wght@100&display=swap');
+    // wp_enqueue_style('montserrat_font', 'fonts/Montserrat/Montserrat-VariableFont_wght.ttf', false);
 
 }
 
 add_action('wp_enqueue_scripts', 'skh_theme_files');
 
+function add_google_fonts() {
+    // wp_enqueue_style('add_google_fonts', '//fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&family=Montserrat:wght@200&family=Roboto:wght@100&display=swap', false);
+    wp_enqueue_style('add_google_fonts', '//fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap', false);
+}
+
+add_action('wp_enqueue_scripts', 'add_google_fonts');
+
 function skh_features() {
     add_theme_support('post-thumbnails');
-    add_image_size('trainerPortrait', 480, 650, true);
+    add_image_size('trainerPortrait', 380, 350, true);
 }
 
 add_action('after_setup_theme', 'skh_features');

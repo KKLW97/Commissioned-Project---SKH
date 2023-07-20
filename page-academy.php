@@ -2,22 +2,22 @@
   get_header();
 ?>
 
-<h2 class="cocoa_text"> <?php echo get_the_title(); ?> </h2>
+<h1 class="cocoa_text"> <?php echo get_the_title(); ?> </h1>
 
 <section class="main display">
 <img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" height="300px" alt="topless man measuring his abdomen">
 </section>
 
-<h3 class="cocoa_text">OUR COURSES</h3>
+<h2 class="cocoa_text">OUR COURSES</h2>
 
 <!-- rewrite this section to be scalable -->
-<section class="course_section basic_font">
+<section class="course_section ">
   <div class="course_component">
     <div class="course_image">
       <img src="<?php echo get_theme_file_uri("assets/product.png") ?>" alt="Picture of micro cotton buds that are pink and blue">
     </div>
     <div class="course_content">
-      <h4 class="">Lash Academy</h4>
+      <h3 class="">LASH TRAINING</h3>
       <button><a href='<?php echo site_url('/courses/lash-academy/');?>'>Learn More</a></button>
     </div>
   </div>
@@ -26,15 +26,15 @@
       <img src="<?php echo get_theme_file_uri("assets/product.png") ?>" alt="Picture of micro cotton buds that are pink and blue">
     </div>
     <div class="course_content">
-      <h4>Brow Academy</h4>
+      <h3>BROW TRAINING</h3>
       <button><a href='<?php echo site_url('/courses/brow-academy/');?>'>Learn More</a></button>
     </div>
     </div>
 </section>
 
 
-<h3 class="cocoa_text">OUR TRAINER</h3>
-<section class="trainer_section basic_font">
+<h2 class="cocoa_text">OUR TRAINER</h2>
+<section class="trainer_section ">
 <?php 
     $upcomingClasses = new WP_Query(array(
         'posts_per_page' => 1,
@@ -47,7 +47,7 @@
     while($upcomingClasses->have_posts()){
         $upcomingClasses->the_post(); ?>
         <div class="image_left">
-          <?php the_post_thumbnail() ?>
+          <?php the_post_thumbnail('trainerPortrait') ?>
         </div>
 
         <div class="details_right">
