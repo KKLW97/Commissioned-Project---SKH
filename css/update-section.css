@@ -62,6 +62,7 @@
     width: fit-content;
     margin: 0px;
     z-index: 1;
+    font-size: 20px;
 }
 
 .update_component:hover > .hide {
