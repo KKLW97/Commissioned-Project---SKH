@@ -1,9 +1,12 @@
 <?php get_header(); ?>
 
-<img src="#" alt="lash academy banner">
+<section class="main display">
+<img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" height="300px" alt="topless man measuring his abdomen">
+</section>
+
 <div class="course_title">
-  <?php echo get_the_title(); ?>
-  <p>By Sumera</p>
+  <h2><?php echo get_the_title(); ?></h2>
+  <h4>By Sumera</h4>
 </div>
 <div class="course_price">
   <p class="actual_price">£<?php echo get_field('actual_price'); ?></p>
@@ -77,6 +80,7 @@
         <p>Country: <?php echo get_field('country') ?></p>
       </div>
     </div>  
+    <hr>
   <?php }
   wp_reset_query();
 ?>
