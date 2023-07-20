@@ -27,7 +27,7 @@ h2,h3 {
 }
 
 .course_content {
-  z-index: 1;
+  z-index: 1; /* kelly could you remove this because it is inteferring with the nav bar*/
   margin: 30px;
   width: fit-content;
   display: grid;
