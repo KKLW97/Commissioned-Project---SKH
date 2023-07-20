@@ -2,8 +2,23 @@
     get_header();
 ?>
 <section class="main_display">
-<img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" alt="topless man measuring his abdomen"><!--
---><p class="announcement_bar beige_text center"><?php 
+<!-- <div class="container">
+    <div class="carousel">
+        <div class="slider">
+            <section> picture 1 </section>
+            <section> picture 2 </section>
+            <section> picture 3 </section>
+            <section> picture 4 </section>
+        </div>
+        <div class="controls">
+            <span class="arrow left">left</span>
+            <span class="arrow right">right</span>
+        </div>
+    </div>
+</div> -->
+<img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" alt="topless man measuring his abdomen">
+
+<p class="announcement_bar beige_text center"><?php 
     $annoucementBar = new WP_Query(array(
         'posts_per_page' => 1,
         'post_type' => 'announcement',

@@ -69,3 +69,29 @@ a {
   display: inline-block;
   border-radius: 25px;
 }
+
+.trainer_section {
+  display: flex;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 30px;
+}
+
+.details_right > h5, h4 {
+  margin: 0px;
+}
+
+.details_right > p {
+  margin: 10px 0px;
+}
+
+.image_left {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.details_right {
+  flex-basis: 50%;
+}

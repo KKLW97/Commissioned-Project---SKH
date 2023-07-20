@@ -1,6 +1,7 @@
 <?php 
 
 function skh_theme_files () {
+    // wp_enqueue_script('frontpage_js', get_theme_file_uri('js/frontpage.js'), array('jquery'), '1.0', true);
     wp_enqueue_style('header_css', get_theme_file_uri('css/header.css'));
     wp_enqueue_style('index_css', get_theme_file_uri('css/index.css'));
     wp_enqueue_style('testimonial_css', get_theme_file_uri('css/testimonial.css'));
