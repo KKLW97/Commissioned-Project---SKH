@@ -1,8 +1,9 @@
 <?php 
     get_header();
 ?>
-<img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" alt="topless man measuring his abdomen">
-<p class="announcement_bar beige_text center"><?php 
+<section class="main_display">
+<img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" alt="topless man measuring his abdomen"><!--
+--><p class="announcement_bar beige_text center"><?php 
     $annoucementBar = new WP_Query(array(
         'posts_per_page' => 1,
         'post_type' => 'announcement',
@@ -24,6 +25,7 @@
         <?php echo get_the_title(); ?>
     <?php } 
 ?></p>
+</section>
 
 <section class="update_section" id="update_section">
     <?php 

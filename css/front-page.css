@@ -11,6 +11,12 @@
   
   .hero_image {
     margin: 0px;
+    padding: 0px;
     min-width: 100%;
     min-height: 100%;
+  }
+
+  .main_display{
+    display: flex;
+    flex-direction: column;
   }
