@@ -18,7 +18,7 @@
             <p class="location_dubai"> DUBAI, 11-12 Gee's Ct, London, W1U 1JN </p>
             <div class="contact_section">
                 <h5> Contact </h5> 
-                <p> E: sumera@skh-londom.com </p> 
+                <p> E: info@skh-london.com </p> 
                 <p> T: 02384923084 </p>
             </div>
             <div class="social_media">
@@ -31,7 +31,7 @@
                         <a href="#" class="social-color-tiktok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="social-color-google"><i class="fa-brands fa-google" aria-hidden="true"></i></a>
+                        <a href="#" class="social-color-whatsapp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
                     </li>
                     <li>
                         <a href="#" class="social-color-instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
