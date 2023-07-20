@@ -83,6 +83,8 @@
     /* background-color: #B76E79; */
     color: #FFFFFF;
     padding: 5px 0px;
-    background: linear-gradient( #F6DFE1 0%, #EBBEC4 8%, #C48983 30%, #B76E78 50%, transparent 80%),
-    linear-gradient(#B76E78 50%, #C48983 70%, #EBBEC4 100%, #F6DFE1 100%, transparent 10%);
+    background-color: #412920;
+
+    /* background: linear-gradient( #F6DFE1 0%, #EBBEC4 8%, #C48983 30%, #B76E78 50%, transparent 80%),
+    linear-gradient(#B76E78 50%, #C48983 70%, #EBBEC4 100%, #F6DFE1 100%, transparent 10%); */
 }
