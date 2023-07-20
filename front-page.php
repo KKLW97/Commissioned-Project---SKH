@@ -49,24 +49,12 @@
 </section>
 
 <h2 class="center cocoa_text basic_font"> TESTIMONIALS </h2>
+
 <section class="testimonial_cards">
+<?php echo do_shortcode('[grw id="95"]'); ?>
     <div class="single_card cafeaulait_background beige_text">
+
         <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim" </p>
-        <!-- stars to go here -->
-        <p style="text-align: center;"> CLIENT NAME </p>
-    </div>
-    <div class="single_card cafeaulait_background beige_text">
-        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor" </p>
-        <!-- stars to go here -->
-        <p style="text-align: center;"> CLIENT NAME </p>
-    </div>
-    <div class="single_card cafeaulait_background beige_text">
-        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </p>
-        <!-- stars to go here -->
-        <p style="text-align: center;"> CLIENT NAME </p>
-    </div>
-    <div class="single_card cafeaulait_background beige_text">
-        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" </p>
         <!-- stars to go here -->
         <p style="text-align: center;"> CLIENT NAME </p>
     </div>
