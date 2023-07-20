@@ -60,4 +60,11 @@ function skh_adjust_queries($query){
 }
 add_action('pre_get_posts', 'skh_adjust_queries');
 
+// removes the white space where the admin bar was supposed to be
+add_action('get_header', 'remove_admin_login_header');
+
+function remove_admin_login_header() {
+    remove_action('wp_head', '_admin_bar_bump_cb');
+}
+
 ?>
