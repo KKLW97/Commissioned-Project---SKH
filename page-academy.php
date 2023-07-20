@@ -39,6 +39,9 @@
     $upcomingClasses = new WP_Query(array(
         'posts_per_page' => 1,
         'post_type' => 'trainers',
+        'meta_key' => 'company_position',
+        'meta_value' => 'Founder',
+        'meta_compare' => 'LIKE'
     ));
 
     while($upcomingClasses->have_posts()){
