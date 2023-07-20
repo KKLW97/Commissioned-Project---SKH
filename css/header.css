@@ -3,6 +3,11 @@ header {
   grid-template-columns: 20% 80%;
   grid-template-areas: "a b";
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #FFFFFF;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .header_logo {
