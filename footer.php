@@ -43,8 +43,8 @@
 
     <div class="footer_bottom">
         <p> ©2023 S.K.H | All rights reserved </p>
-        <p> Designed by Better Than You Ltd </p>
-        <p> Powered by Wordpress </p>
+        <p> Designed by Thibyaa Mahasivam and Kelly Kar Ling Wong </p>
+        <p> Powered by WordPress </p>
     </div>
         
 <footer>
