@@ -72,10 +72,10 @@ a {
 
 .trainer_section {
   display: flex;
-  width: 100%;
+  width: 90%;
   padding-left: 50px;
   padding-right: 50px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .details_right > h5, h4 {
@@ -94,4 +94,8 @@ a {
 
 .details_right {
   flex-basis: 50%;
+}
+
+.details_right > p {
+  text-align: justify;
 }

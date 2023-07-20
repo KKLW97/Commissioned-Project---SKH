@@ -2,13 +2,13 @@
   get_header();
 ?>
 
-<h2> <?php echo get_the_title(); ?> </h2>
+<h2 class="cocoa_text"> <?php echo get_the_title(); ?> </h2>
 
 <section class="main display">
 <img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" height="300px" alt="topless man measuring his abdomen">
 </section>
 
-<h3>OUR COURSES</h3>
+<h3 class="cocoa_text">OUR COURSES</h3>
 
 <!-- rewrite this section to be scalable -->
 <section class="course_section basic_font">
@@ -33,7 +33,7 @@
 </section>
 
 
-<h3>OUR TRAINER</h3>
+<h3 class="cocoa_text">OUR TRAINER</h3>
 <section class="trainer_section basic_font">
 <?php 
     $upcomingClasses = new WP_Query(array(
@@ -44,13 +44,13 @@
     while($upcomingClasses->have_posts()){
         $upcomingClasses->the_post(); ?>
         <div class="image_left">
-          <img src="#" alt="Director's image">
+          <?php the_post_thumbnail() ?>
         </div>
 
         <div class="details_right">
-          <?php echo '<h4> ' . get_the_title() .' </h4>' ?>
-          <h5> <?php echo get_field('company_position')?> </h5>
-        <p><?php echo get_field('trainer_details')?></p>
+          <?php echo '<h4 class="cafeaulait_text "> ' . get_the_title() .' </h4>' ?>
+          <h5 class="cafeaulait_text "> <?php echo get_field('company_position')?> </h5>
+        <p class="cocoa_text"><?php echo get_field('trainer_details')?></p>
       </div>
     <?php } ?>
 </section>
