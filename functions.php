@@ -10,7 +10,7 @@ function skh_theme_files () {
     wp_enqueue_style('general_css', get_theme_file_uri('css/general.css'));
     wp_enqueue_style('academy_css', get_theme_file_uri('css/academy.css'));
     wp_enqueue_style('front_page_css', get_theme_file_uri('css/front-page.css'));
-    wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+    wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v6.0.0/css/all.css');
     wp_enqueue_style('montserrat_font', '//fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&family=Roboto:wght@100&display=swap');
 
 }
@@ -42,7 +42,11 @@ function skh_adjust_queries($query){
     if(!is_admin() AND is_post_type_archive('trainers') AND is_main_query()) {
         $query->set('orderby', 'title');
         $query->set('order', 'ASC');
-        $query->set('posts_per_page', -1);
+    }
+
+    if(!is_admin() AND is_post_type_archive('announcement') AND is_main_query()) {
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
     }
 
 }

@@ -45,20 +45,20 @@
       'post_type' => 'class',
       'meta_key' => 'class_date',
       'orderby' => 'meta_value_num',
-      'order' => 'ASC'
-      // LOOK INTO THE CLASS DATE 
-      // 'meta_query' => array(
-      //     array(
-      //         'key' => 'class_date',
-      //         'compare' => '>=',
-      //         'value' => date('Ymd'),
-      //         'type' => 'numeric'
-      //     )
-      // )
+      'order' => 'ASC',
+      'meta_query' => array(
+          array(
+              'key' => 'class_date',
+              'compare' => '>=',
+              'value' => date('Ymd'),
+              'type' => 'numeric'
+          )
+      )
   ));
 
   while($upcomingClasses->have_posts()){
-    $upcomingClasses->the_post(); 
+    $upcomingClasses->the_post();
+    $trainers = get_field('course_trainer');
     // get_template_part('template-parts/content', 'class'); //refactor later to simplify the code below into a content-class.php file within a template-parts folder
     ?>
     <div class="upcoming_section">
@@ -67,12 +67,18 @@
       </div>
       <div class="class_info_right">
         <?php echo '<h3> UPCOMING: ' . get_the_title() .' </h3>' ?>
-        <h4><?php echo the_time('F j Y g:i a'); ?></h4> 
-        <p><?php echo get_field('course_trainer') ?></p>
+        <h4><?php echo get_field('class_date'); ?></h4> 
+        <?php if($trainers) ?>
+        <p>
+          <?php foreach($trainers as $trainer):
+            echo get_the_title($trainer, $post->ID);
+          endforeach; ?>
+        </p>
         <p>Country: <?php echo get_field('country') ?></p>
       </div>
     </div>  
   <?php }
+  wp_reset_query();
 ?>
 </section>
 

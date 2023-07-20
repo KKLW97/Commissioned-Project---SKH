@@ -8,7 +8,7 @@
 
 <h3>OUR COURSES</h3>
 
-
+<!-- rewrite this section to be scalable -->
 <section class="course_section basic_font">
   <div class="course_component">
     <div class="course_image">

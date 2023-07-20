@@ -18,10 +18,9 @@
           <div class="center">
             <a class="header_logo" href="<?php echo site_url();?>"><img src="<?php echo get_theme_file_uri('assets/RoseGoldLogo.jpg'); ?>" alt="SKH logo"></a>
           </div>
-
-          <nav>
-            <ul>
-
+          <div class="header_nav">
+            <nav>
+              <ul>
             <div class="dropdown_menu">
               <li <?php if(is_page('academy') OR get_post_type()== 'course') echo 'class="current_menu_item"'?>><a href="<?php echo site_url('academy/');?>"> Academy </a>
                 <i class="fa fa-caret-down" style="font-size: 17px"></i>
