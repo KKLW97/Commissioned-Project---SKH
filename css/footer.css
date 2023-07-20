@@ -13,6 +13,12 @@
     place-self: center;
 }
 
+.footer_nav {
+    grid-area: b;
+    display: flex;
+    justify-items: left;
+}
+
 .footer_top_right {
     display: grid;
     grid-area: c;
@@ -22,17 +28,18 @@
     "c d e g";
 }
 
-.footer-nav_list {
+.footer_nav_list > li {
+    display: list-item;
+}
+/* .footer-nav_list {
     display: grid;
     grid-template-columns: 1fr;
-    /* display: flex; */
 }
 
 .footer-nav_list > li {
     display: grid;
     grid-template-columns: 1fr;
-    /* display: flex; */
-}
+} */
 
 .location_london {
     grid-area: c;
@@ -55,13 +62,7 @@
 
 .social_media{
     grid-area: f;
-    /* display: flex;
-    place-self: end; */
-    /* display: grid; */
-    /* grid-template-rows: 10% 90%; */
-    /* grid-template-areas: 
-    "title" 10% 
-    "icons" 90%; */
+
 }
 
 .footer_headers {
@@ -78,11 +79,11 @@
 }
 
 .footer_bottom {
-    /* background-color: rosybrown; */
     text-align: center;
-    /* background-color: #B76E79; */
     color: #FFFFFF;
     padding: 5px 0px;
-    background: linear-gradient( #F6DFE1 0%, #EBBEC4 8%, #C48983 30%, #B76E78 50%, transparent 80%),
-    linear-gradient(#B76E78 50%, #C48983 70%, #EBBEC4 100%, #F6DFE1 100%, transparent 10%);
+    background-color: #412920;
+
+    /* background: linear-gradient( #F6DFE1 0%, #EBBEC4 8%, #C48983 30%, #B76E78 50%, transparent 80%),
+    linear-gradient(#B76E78 50%, #C48983 70%, #EBBEC4 100%, #F6DFE1 100%, transparent 10%); */
 }
