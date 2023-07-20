@@ -49,7 +49,7 @@
         ?>
         <div class="update_component">
             <div class="update_image">
-                <img src=<?php echo get_theme_file_uri('assets/lash.png'); ?> alt="">
+                <?php the_post_thumbnail() ?>
             </div>
             <div class="update_content">
                 <?php echo '<h3> UPCOMING: ' . get_the_title() .' </h3>' ?>
