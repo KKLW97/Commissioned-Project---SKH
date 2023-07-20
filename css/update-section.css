@@ -18,19 +18,16 @@
 }
 
 .update_content > h3 {
-    position: absolute;
+    position: relative;
     color: #ffffff;
-    width: fit-content;
-    top: 20%;          
     font-size: 20px;
     margin: 0px;
     z-index: 1;
 }
 
 .update_content > h4 {
+    position: relative;
     color: white;
-    top: 60%;
-    width: fit-content;
     margin: 0px;
     margin-bottom: 10px;
     z-index: 1;
@@ -39,6 +36,7 @@
 .update_content {
     z-index: 1;
     margin: 30px;
+    width: fit-content;
 }
 
 .update_image {

@@ -53,7 +53,7 @@
             </div>
             <div class="update_content">
                 <?php echo '<h3> UPCOMING: ' . get_the_title() .' </h3>' ?>
-                <h4><?php echo get_field('class_date'); ?></h4> 
+                <h4 class="center"><?php echo get_field('class_date'); ?></h4> 
             </div>
             <div class="hide">
                 <p><?php echo the_excerpt(); ?></p>
