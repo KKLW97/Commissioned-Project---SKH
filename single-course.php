@@ -5,7 +5,7 @@
 </section>
 
 <div class="course_title cafeaulait_text center">
-  <h2><?php echo get_the_title(); ?></h2>
+  <h1><?php echo get_the_title(); ?></h1>
   <h4>By Sumera</h4>
 </div>
 <div class="course_price cocoa_text">
@@ -44,7 +44,7 @@
 </section>
 
 <section class="course_structure">
-  <h4 class="center">COURSE STRUCTURE</h4>
+  <h3 class="center">COURSE STRUCTURE</h3>
   <!-- this will probably be a table of some sort or something -->
   <p><?php echo get_field('course_structure'); ?></p>
 </section>
@@ -84,10 +84,11 @@
         <img src=<?php echo get_theme_file_uri('assets/product.png'); ?> alt=""> <!-- sort out class image -->
       </div>
       <div class="class_info_right">
-        <?php echo '<h4>' . get_the_title() .' </h4>' ?>
-        <h4><?php echo get_field('class_date'); ?></h4> 
+        <?php echo '<h5>' . get_the_title() .' </h5>' ?>
+        <h6><?php echo get_field('class_date'); ?></h6> 
         <?php if($trainers) ?>
-        <p>
+        <p> Need to add time </p>
+        <p> Trainer:
           <?php foreach($trainers as $trainer):
             echo get_the_title($trainer, $post->ID);
           endforeach; ?>
