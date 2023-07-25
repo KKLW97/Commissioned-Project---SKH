@@ -34,3 +34,124 @@
 .discount_price {
     font-size: 80px;
 }
+
+.overview > p {
+    text-align: center;
+}
+
+.course_kit {
+    display: flex;
+    width: 90%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.course_lash_kit > img {
+    grid-area: a;
+    object-fit: stretch;
+    height: 250px;
+    width: 100%;
+    opacity: 80%;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.course_lash_kit > p {
+    grid-area: b;
+    display: flex;
+    justify-self: center;
+    margin: 15px;
+}
+  
+.kit_content > p {
+    margin: 10px 0px;
+    text-align: justify;
+}
+.kit_list{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* flex-direction: column; */
+    margin: 10px;
+}
+.kit_item {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+    gap: 16px;
+}
+
+.kit_item > li {
+    list-style-type: disc;
+}
+.course_lash_kit {
+    flex-basis: 50%;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: 
+    "a"
+    "b";
+}
+  
+.kit_content {
+    flex-basis: 50%;
+}
+
+.upcoming_section {
+    display: flex;
+    width: 90%;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+}
+
+.class_info_right {
+    margin-left: 20px;
+}
+
+.class_info_right > h4 {
+    margin: 0px;
+}
+  
+.class_info_right > p {
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+.class_info_left > img {
+    max-width: 100%;
+}
+
+.class_info_left {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+}
+  
+.class_info_right {
+    flex-basis: 80%;
+}
+
+.skh_contact {
+    display: flex;
+    justify-content: center;
+}
+
+.skh_contact_button {
+    background-color: #A9846A;
+    color: white;
+    margin: 0px;
+    font-weight: 600;
+    font-stretch: ultra-condensed;
+    border-radius: 5px;
+    border-width: 0;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    padding: 10px;
+    text-transform: uppercase;
+}
+  
+.skh_contact_button, a {
+    text-decoration: none;
+    color: white;
+}
