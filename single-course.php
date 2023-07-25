@@ -17,7 +17,6 @@
   <h4 class="center"><?php echo get_field('course_duration') ?></h4>
   <p><?php echo get_field('overview_of_the_course'); ?></p>
 <section>
-<?php print_r(get_the_ID()); ?>
 
 <section class="course_kit">
   <div class="course_lash_kit">
@@ -39,8 +38,10 @@
   </div>
 </section>
 <section class="banner">
-  <h4 class="center">Benefits</h4> <!-- look up ACF documentation -->
-  <p><?php echo get_field('benefits'); ?></p>
+  <h3 class="center">Benefits</h3> <!-- look up ACF documentation -->
+  <div class="banner_list">
+    <?php the_field('course_benefits'); ?>
+  </div>
 </section>
 
 <section class="course_structure">
