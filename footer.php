@@ -34,16 +34,16 @@
                 <h5 class="footer_headers">Connect With Us</h5>
                 <ul class="social_media_icons">
                     <li>
-                        <a href="#" class="social-color-facebook"><i class="fa-brands fa-facebook-f fa-2xl" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/Sumera.K.Hussain/?locale=en_GB" class="social-color-facebook"><i class="fa-brands fa-facebook-f fa-2xl" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="social-color-tiktok"><i class="fa-brands fa-tiktok fa-2xl" aria-hidden="true"></i></a>
+                        <a href="https://www.tiktok.com/@skh.beauty" class="social-color-tiktok"><i class="fa-brands fa-tiktok fa-2xl" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="social-color-whatsapp"><i class="fa-brands fa-whatsapp fa-2xl" aria-hidden="true"></i></a>
+                        <a href="#" class="social-color-whatsapp"><i class="fa-brands fa-whatsapp fa-2xl" aria-hidden="true"></i></a> <!-- need Sumera whatsapp link -->
                     </li>
                     <li>
-                        <a href="#" class="social-color-instagram"><i class="fa-brands fa-instagram fa-2xl" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/s.k.hbeauty/" class="social-color-instagram"><i class="fa-brands fa-instagram fa-2xl" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </div>
