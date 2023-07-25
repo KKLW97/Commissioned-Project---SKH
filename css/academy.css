@@ -38,7 +38,6 @@ h1, h2 {
   color: white;
   margin: 0px;
   margin-bottom: 10px;
-  z-index: 1;
 }
 
 .course_content > button {

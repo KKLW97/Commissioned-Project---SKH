@@ -5,17 +5,25 @@
         </div>
         <div class="footer_nav">
             <h5 className="footer_headers">Useful Links:</h5>
-            <nav class="footer_nav_list">
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </nav>
+            <div class="footer_nav_list">
+                <a href="#">About Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy Policy</a>
+            </div>
         </div>
         <div class="footer_top_right">
-            <p class="location_london"> LONDON 11-12 Gee's Ct, London, W1U 1JN </p>
-            <p class="location_dubai"> DUBAI, 11-12 Gee's Ct, London, W1U 1JN </p>
+            <div class="location"> 
+                <h5>LONDON</h5>
+                <p>11-12 Gee's Ct</p>
+                <p>London</p>
+                <p>W1U 1JN</p> 
+            </div>
+            <div class="location_dubai">
+                <h5>DUBAI</h5>
+                <p>11-12 Gee's Ct</p>
+                <p>London</p>
+                <p>W1U 1JN</p>
+            </div>
             <div class="contact_section">
                 <h5> Contact </h5> 
                 <p> E: info@skh-london.com </p> 

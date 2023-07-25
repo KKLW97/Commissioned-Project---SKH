@@ -1,11 +1,13 @@
 .footer_top {
     display: grid;
-    grid-template-columns: 20% 20% 60%;
-    grid-template-areas: "a b c";
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a b";
 }
 
 .footer_top_left {
     grid-area: a;
+    margin: 10px;
+    place-self: center;
 }
 
 .footer_top_left > img {
@@ -13,47 +15,50 @@
     place-self: center;
 }
 
-.footer_nav {
-    grid-area: b;
-    display: flex;
-    justify-items: left;
-}
+
 
 .footer_top_right {
     display: grid;
-    grid-area: c;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-area: b;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-areas: 
-    "c d e f"
-    "c d e g";
+    "b c d e f"
+    "b c d e g";
+}
+.footer_nav {
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.footer_nav_list > a{
+    display: inline-block;
+    color: black;
+}
+.footer_nav_list > a:hover {
+    color: #B98663;
+    text-decoration: underline;
+}
+.footer_nav_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.footer_nav_list > li {
-    display: list-item;
-}
-/* .footer-nav_list {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.footer-nav_list > li {
-    display: grid;
-    grid-template-columns: 1fr;
-} */
-
-.location_london {
+.location {
     grid-area: c;
     margin: 10px;
-    display: flex;
-    place-self: center;
+    /* display: flex;
+    place-self: center; */
 }
 
 .location_dubai {
     grid-area: d;
     margin: 10px;
-    display: flex;
-    place-self: center;
+    /* display: flex;
+    place-self: center; */
 }
+
 
 .contact_section{
     grid-area: e;
@@ -62,7 +67,7 @@
 
 .social_media{
     grid-area: f;
-
+    margin: 10px;
 }
 
 .footer_headers {
