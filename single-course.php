@@ -24,17 +24,7 @@
     <p>Free Lash Kit</p>
   </div>
   <div class="kit_content">
-    <p>Kit Includes:</p>
-    <?php
-    $arr = get_field('kit_provided');
-    $str = explode (",", $arr);
-    echo '<ul class="kit_list">';
-    foreach($str as $s){
-        echo '<li class="kit_item">'.$s.'</li>';
-    }
-    echo '</ul>';
-    ?>
-    
+    <?php the_field('kit_provided'); ?>
   </div>
 </section>
 <section class="banner">
