@@ -2,4 +2,4 @@
 
 // const frontPage = new FrontPage();
 
-alert("hi");
+// alert("hi");

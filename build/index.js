@@ -7,7 +7,7 @@ var __webpack_exports__ = {};
 
 // const frontPage = new FrontPage();
 
-alert("hi");
+// alert("hi");
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map
