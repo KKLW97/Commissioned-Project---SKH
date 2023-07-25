@@ -2,6 +2,47 @@
     text-align: center;
 }
 
+.course_kit {
+    display: flex;
+    width: 90%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.course_lash_kit > img {
+    grid-area: a;
+    object-fit: stretch;
+    height: 250px;
+    width: 100%;
+    opacity: 80%;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.course_lash_kit > p {
+    grid-area: b;
+    display: flex;
+    justify-self: center;
+    margin: 15px;
+}
+  
+.kit_content > p {
+    margin: 10px 0px;
+    text-align: justify;
+}
+  
+.course_lash_kit {
+    flex-basis: 50%;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: 
+    "a"
+    "b";
+}
+  
+.kit_content {
+    flex-basis: 50%;
+}
 
 .upcoming_section {
     display: flex;
