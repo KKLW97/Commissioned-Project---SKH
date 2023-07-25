@@ -36,7 +36,7 @@
 
 <section class="course_structure">
   <h2 class="center">COURSE STRUCTURE</h2>
-  <p><?php echo get_field('course_structure'); ?></p>
+  <?php echo get_field('course_structure'); ?>
 </section>
 
 <h2 class="center"> UPCOMING CLASSES</h2>
