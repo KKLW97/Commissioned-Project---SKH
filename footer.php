@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="footer_top_right">
-            <div class="location"> 
+            <div class="location_london"> 
                 <h5>LONDON</h5>
                 <p>11-12 Gee's Ct</p>
                 <p>London</p>
