@@ -3,15 +3,16 @@
         <div class="footer_top_left">
             <img src="<?php echo get_theme_file_uri('assets/FullLogo.png'); ?>" alt="SKH Full Logo" width=150px>
         </div>
-        <div class="footer_nav">
-            <h5 className="footer_headers">Useful Links</h5>
-            <div class="footer_nav_list">
-                <a href="#">About Us</a>
-                <a href="#">FAQ</a>
-                <a href="#">Privacy Policy</a>
-            </div>
-        </div>
+        
         <div class="footer_top_right">
+            <div class="footer_nav">
+                <h5 className="footer_headers">Useful Links</h5>
+                <div class="footer_nav_list">
+                    <a href="#">About Us</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
             <div class="location_london"> 
                 <h5>LONDON</h5>
                 <p>11-12 Gee's Ct</p>
