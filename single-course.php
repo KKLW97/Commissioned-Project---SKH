@@ -40,13 +40,12 @@
 <section class="banner">
   <h3 class="center">Benefits</h3> <!-- look up ACF documentation -->
   <div class="banner_list">
-    <?php the_field('course_benefits'); ?>
+    <?php the_field('benefits'); ?>
   </div>
 </section>
 
 <section class="course_structure">
   <h3 class="center">COURSE STRUCTURE</h3>
-  <!-- this will probably be a table of some sort or something -->
   <p><?php echo get_field('course_structure'); ?></p>
 </section>
 

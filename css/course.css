@@ -190,3 +190,11 @@ hr {
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+
+.course_structure > p {
+    padding-left: 30%;
+    color: #a9846a;
+    font-weight: 300;
+    font-size: larger;
+}
+
