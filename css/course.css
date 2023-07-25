@@ -1,0 +1,56 @@
+.overview > p {
+    text-align: center;
+}
+
+
+.upcoming_section {
+    display: flex;
+    width: 90%;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+}
+  
+.class_info_right > h4 {
+    margin: 0px;
+}
+  
+.class_info_right > p {
+    margin: 10px 0px;
+    text-align: justify;
+}
+  
+.class_info_left {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+}
+  
+.class_info_right {
+    flex-basis: 50%;
+}
+
+.skh_contact {
+    display: flex;
+    justify-content: center;
+}
+
+.skh_contact_button {
+    background-color: #A9846A;
+    color: white;
+    margin: 0px;
+    font-weight: 600;
+    font-stretch: ultra-condensed;
+    border-radius: 5px;
+    border-width: 0;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    padding: 10px;
+    text-transform: uppercase;
+}
+  
+.skh_contact_button, a {
+    text-decoration: none;
+    color: white;
+}

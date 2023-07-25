@@ -61,10 +61,6 @@ a {
   color: white;
 }
 
-/* .course_content > button:hover > a {
-  color: gold;
-} */
-
 .course_image > img {
   object-fit: stretch;
   height: 250px;

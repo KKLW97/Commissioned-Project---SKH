@@ -20,7 +20,7 @@
 
 <section class="course_kit">
   <div class="course_lash_kit">
-    <img src="#" alt="">
+    <img src="<?php echo get_theme_file_uri("assets/product.png") ?>" alt="">
     <p>Free Lash Kit</p>
   </div>
   <div class="kit_content">
@@ -90,7 +90,8 @@
   wp_reset_query();
 ?>
 </section>
-
-<button>START YOUR JOURNEY WITH SKH</button>  
+<div class="skh_contact">
+  <button class="skh_contact_button">START YOUR JOURNEY WITH SKH</button> 
+</div>
 
 <?php get_footer();?>
