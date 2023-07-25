@@ -45,10 +45,15 @@ h1, h2 {
   background-color: #A9846A;
   color: white;
   margin: 0px;
-  /* z-index: 1; */
-  font-weight: bold;
+  font-weight: 600;
   font-stretch: ultra-condensed;
   border-radius: 5px;
+  border-width: 0;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  padding: 10px;
+  text-transform: uppercase;
 }
 
 .course_content > button,
@@ -57,9 +62,9 @@ a {
   color: white;
 }
 
-.course_content > button:hover > a {
+/* .course_content > button:hover > a {
   color: gold;
-}
+} */
 
 .course_image > img {
   object-fit: stretch;

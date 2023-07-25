@@ -18,7 +18,7 @@
     </div>
     <div class="course_content">
       <h3 class="">LASH TRAINING</h3>
-      <button><a href='<?php echo site_url('/courses/lash-academy/');?>'>Learn More</a></button>
+      <button class="button-48"><a href='<?php echo site_url('/courses/lash-academy/');?>'>Learn More</a></button>
     </div>
   </div>
   <div class="course_component">
@@ -27,7 +27,7 @@
     </div>
     <div class="course_content">
       <h3>BROW TRAINING</h3>
-      <button><a href='<?php echo site_url('/courses/brow-academy/');?>'>Learn More</a></button>
+      <button class="button-48"><a href='<?php echo site_url('/courses/brow-academy/');?>'>Learn More</a></button>
     </div>
     </div>
 </section>
