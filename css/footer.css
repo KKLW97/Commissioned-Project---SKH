@@ -62,6 +62,11 @@
     margin: 10px;
 }
 
+.contact {
+    display: inline-block;
+    color: black;
+}
+
 .social_media{
     grid-area: f;
     margin: 10px;
@@ -77,7 +82,11 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 5px;
 }
+/* .social_media_icons > a > i {
+    font-size: 25px;
+} */
 
 .footer_bottom {
     text-align: center;

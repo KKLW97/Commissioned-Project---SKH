@@ -27,23 +27,23 @@
             </div>
             <div class="contact_section">
                 <h5> Contact </h5> 
-                <p> E: info@skh-london.com </p> 
-                <p> T: 02384923084 </p>
+                <p><a class="contact" href="mailto:info@skh-london.com"> E: info@skh-london.com </a></p> 
+                <p><a class="contact" href="tel: +44 (238)4923084"> T: 02384923084 </a></p>
             </div>
             <div class="social_media">
                 <h5 class="footer_headers">Connect With Us</h5>
                 <ul class="social_media_icons">
                     <li>
-                        <a href="#" class="social-color-facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" class="social-color-facebook"><i class="fa-brands fa-facebook-f fa-2xl" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="social-color-tiktok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+                        <a href="#" class="social-color-tiktok"><i class="fa-brands fa-tiktok fa-2xl" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="social-color-whatsapp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="#" class="social-color-whatsapp"><i class="fa-brands fa-whatsapp fa-2xl" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="social-color-instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" class="social-color-instagram"><i class="fa-brands fa-instagram fa-2xl" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </div>
