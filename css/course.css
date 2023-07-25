@@ -1,0 +1,36 @@
+.course_title {
+    display: flex;
+    flex-direction: column;
+}
+
+.course_title > h2 {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.course_title > h4 {
+    font-family: 'Stint Ultra Expanded', cursive;
+    padding-left: 12em;
+}
+
+.course_price {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Stint Ultra Expanded', cursive;
+    align-items: baseline;
+    justify-content: end;
+    padding-right: 15%;
+}
+
+.course_price > p {
+    margin: 5px 10px;
+}
+
+.actual_price {
+    font-size: 50px;
+    text-decoration: line-through;
+}
+
+.discount_price {
+    font-size: 80px;
+}

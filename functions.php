@@ -3,6 +3,7 @@
 function skh_theme_files () {
     wp_enqueue_style('header_css', get_theme_file_uri('css/header.css'));
     wp_enqueue_style('index_css', get_theme_file_uri('css/normalize.css'));
+    wp_enqueue_style('course_css', get_theme_file_uri('css/course.css'));
     wp_enqueue_style('testimonial_css', get_theme_file_uri('css/testimonial.css'));
     wp_enqueue_style('footer_css', get_theme_file_uri('css/footer.css'));
     wp_enqueue_style('the_academy_css', get_theme_file_uri('css/the-academy.css'));
