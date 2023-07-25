@@ -38,7 +38,7 @@
   </div>
 </section>
 <section class="banner">
-  <h3 class="center">Benefits</h3> <!-- look up ACF documentation -->
+  <h2 class="center">Benefits</h2> 
   <div class="banner_list">
     <?php the_field('benefits'); ?>
   </div>
