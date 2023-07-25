@@ -17,6 +17,7 @@
   <h4 class="center"><?php echo get_field('course_duration') ?></h4>
   <p><?php echo get_field('overview_of_the_course'); ?></p>
 <section>
+<?php print_r(get_the_ID()); ?>
 
 <section class="course_kit">
   <div class="course_lash_kit">
@@ -24,12 +25,19 @@
     <p>Free Lash Kit</p>
   </div>
   <div class="kit_content">
-    <ul>
-      <?php echo get_field('kit_provided'); ?>
-    </ul>
+    <p>Kit Includes:</p>
+    <?php
+    $arr = get_field('kit_provided');
+    $str = explode (",", $arr);
+    echo '<ul class="kit_list">';
+    foreach($str as $s){
+        echo '<li class="kit_item">'.$s.'</li>';
+    }
+    echo '</ul>';
+    ?>
+    
   </div>
 </section>
-
 <section class="banner">
   <h4 class="center">Benefits</h4> <!-- look up ACF documentation -->
   <p><?php echo get_field('benefits'); ?></p>
@@ -40,6 +48,8 @@
   <!-- this will probably be a table of some sort or something -->
   <p><?php echo get_field('course_structure'); ?></p>
 </section>
+
+<h3 class="center"> UPCOMING CLASSES</h3>
 
 <section class="upcoming_classes">
 <?php
@@ -74,7 +84,7 @@
         <img src=<?php echo get_theme_file_uri('assets/product.png'); ?> alt=""> <!-- sort out class image -->
       </div>
       <div class="class_info_right">
-        <?php echo '<h3> UPCOMING: ' . get_the_title() .' </h3>' ?>
+        <?php echo '<h4>' . get_the_title() .' </h4>' ?>
         <h4><?php echo get_field('class_date'); ?></h4> 
         <?php if($trainers) ?>
         <p>

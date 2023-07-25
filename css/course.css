@@ -30,7 +30,21 @@
     margin: 10px 0px;
     text-align: justify;
 }
-  
+.kit_list{
+    display: list-item;
+    list-style-position: outside;
+    /* flex-direction: column; */
+    margin: 10px;
+}
+.kit_item {
+    /* display: flex;
+    flex-direction: column; */
+    gap: 16px;
+}
+
+.kit_item > li {
+    list-style-type: disc;
+}
 .course_lash_kit {
     flex-basis: 50%;
     display: grid;
@@ -51,7 +65,11 @@
     padding-right: 50px;
     font-size: 25px;
 }
-  
+
+.class_info_right {
+    margin-left: 20px;
+}
+
 .class_info_right > h4 {
     margin: 0px;
 }
@@ -60,15 +78,19 @@
     margin: 10px 0px;
     text-align: justify;
 }
-  
+
+.class_info_left > img {
+    max-width: 100%;
+}
+
 .class_info_left {
-    flex-basis: 50%;
+    flex-basis: 20%;
     display: flex;
     justify-content: center;
 }
   
 .class_info_right {
-    flex-basis: 50%;
+    flex-basis: 80%;
 }
 
 .skh_contact {
