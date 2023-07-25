@@ -39,8 +39,10 @@
   </div>
 </section>
 <section class="banner">
-  <h4 class="center">Benefits</h4> <!-- look up ACF documentation -->
-  <p><?php echo get_field('benefits'); ?></p>
+  <h3 class="center">Benefits</h3> <!-- look up ACF documentation -->
+  <div class="banner_list">
+    <?php the_field('course_benefits'); ?>
+  </div>
 </section>
 
 <section class="course_structure">

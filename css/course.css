@@ -47,6 +47,7 @@
 .kit_item > li {
     list-style-type: disc;
 }
+
 .course_lash_kit {
     flex-basis: 50%;
     display: grid;
@@ -58,6 +59,28 @@
   
 .kit_content {
     flex-basis: 50%;
+}
+
+.banner {
+    padding: 10px;
+    background-color: rgba(185, 134, 99, .5);
+}
+
+.banner > h3 {
+    margin: 10px;
+}
+
+.banner_list {
+    display: flex;
+    justify-content: center;
+}
+
+.banner_list > ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 10px;
+    gap: 10px;
 }
 
 .upcoming_section {
