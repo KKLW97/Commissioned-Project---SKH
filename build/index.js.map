@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","mappings":";;;;;AAAA;;AAEA;;AAEAA,KAAK,CAAC,IAAI,CAAC,C","sources":["webpack://skhwebsite/./src/index.js"],"sourcesContent":["// import FrontPage from \"./modules/FrontPage\";\n\n// const frontPage = new FrontPage();\n\nalert(\"hi\");"],"names":["alert"],"sourceRoot":""}

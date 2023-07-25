@@ -1,5 +1,5 @@
-import FrontPage from "./modules/FrontPage";
+// import FrontPage from "./modules/FrontPage";
 
-const frontPage = new FrontPage();
+// const frontPage = new FrontPage();
 
 alert("hi");
