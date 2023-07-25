@@ -192,9 +192,16 @@ hr {
 }
 
 .course_structure > p {
-    padding-left: 30%;
+    padding-left: 28%;
     color: #a9846a;
     font-weight: 300;
-    font-size: larger;
+    font-size: 25px;
 }
 
+.overview > p {
+    padding: 0px 50px;
+    color: #a9846a;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 25px;
+}

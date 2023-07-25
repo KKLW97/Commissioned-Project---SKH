@@ -14,7 +14,7 @@
 </div>
 
 <section class="overview">
-  <h4 class="center"><?php echo get_field('course_duration') ?></h4>
+  <h2 class="center cocoa_text"><?php echo get_field('course_duration') ?></h2>
   <p><?php echo get_field('overview_of_the_course'); ?></p>
 <section>
 
@@ -45,11 +45,11 @@
 </section>
 
 <section class="course_structure">
-  <h3 class="center">COURSE STRUCTURE</h3>
+  <h2 class="center">COURSE STRUCTURE</h2>
   <p><?php echo get_field('course_structure'); ?></p>
 </section>
 
-<h3 class="center"> UPCOMING CLASSES</h3>
+<h2 class="center"> UPCOMING CLASSES</h2>
 
 <section class="upcoming_classes">
 <?php
