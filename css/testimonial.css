@@ -29,6 +29,7 @@
     width: 0px;
   }
   
-  .single_card::-webkit-scrollbar-track {
-    background: none; 
-  }
+.single_card::-webkit-scrollbar-track {
+  background: none; 
+}
+

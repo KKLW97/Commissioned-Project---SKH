@@ -1,7 +1,6 @@
 <?php 
 
 function skh_theme_files () {
-    // wp_enqueue_script('frontpage_js', get_theme_file_uri('js/frontpage.js'), array('jquery'), '1.0', true);
     wp_enqueue_style('header_css', get_theme_file_uri('css/header.css'));
     wp_enqueue_style('index_css', get_theme_file_uri('css/index.css'));
     wp_enqueue_style('testimonial_css', get_theme_file_uri('css/testimonial.css'));
@@ -13,10 +12,15 @@ function skh_theme_files () {
     wp_enqueue_style('front_page_css', get_theme_file_uri('css/front-page.css'));
     wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v6.0.0/css/all.css');
     // wp_enqueue_style('montserrat_font', 'fonts/Montserrat/Montserrat-VariableFont_wght.ttf', false);
-
 }
 
 add_action('wp_enqueue_scripts', 'skh_theme_files');
+
+function skh_javascript_files(){
+    wp_enqueue_script('main-animal', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', false);
+}
+
+add_action('wp_enqueue_scripts', 'skh_javascript_files');
 
 function add_google_fonts() {
     // wp_enqueue_style('add_google_fonts', '//fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&family=Montserrat:wght@200&family=Roboto:wght@100&display=swap', false);
