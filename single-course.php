@@ -42,21 +42,26 @@
 </section>
 
 <section class="upcoming_classes">
-<?php 
-  $upcomingClasses = new WP_Query(array(
-      'posts_per_page' => 3,
-      'post_type' => 'class',
-      'meta_key' => 'class_date',
-      'orderby' => 'meta_value_num',
-      'order' => 'ASC',
-      'meta_query' => array(
-          array(
-              'key' => 'class_date',
-              'compare' => '>=',
-              'value' => date('Ymd'),
-              'type' => 'numeric'
-          )
-      )
+<?php
+    $upcomingClasses = new WP_Query(array(
+    'posts_per_page' => 3,
+    'post_type' => 'class',
+    'meta_key' => 'class_date',
+    'orderby' => 'meta_value_num',
+    'order' => 'ASC',
+    'meta_query' => array(
+      array(
+        'key' => 'class_date',
+        'compare' => '>=',
+        'value' => date('Ymd'),
+        'type' => 'numeric'
+      ),
+      array(
+        'key' => 'course_class',
+        'compare' => 'LIKE',
+        'value' => '"' . get_the_ID() . '"'
+    )
+  )
   ));
 
   while($upcomingClasses->have_posts()){
