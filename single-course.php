@@ -17,7 +17,6 @@
   <h4 class="center"><?php echo get_field('course_duration') ?></h4>
   <p><?php echo get_field('overview_of_the_course'); ?></p>
 <section>
-<?php print_r(get_the_ID()); ?>
 
 <section class="course_kit">
   <div class="course_lash_kit">
