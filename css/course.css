@@ -31,14 +31,15 @@
     text-align: justify;
 }
 .kit_list{
-    display: list-item;
-    list-style-position: outside;
+    display: grid;
+    grid-template-columns: 1fr;
     /* flex-direction: column; */
     margin: 10px;
 }
 .kit_item {
-    /* display: flex;
-    flex-direction: column; */
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
     gap: 16px;
 }
 
