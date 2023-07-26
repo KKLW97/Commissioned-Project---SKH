@@ -18,15 +18,22 @@
   <p><?php echo get_field('overview_of_the_course'); ?></p>
 <section>
 
+<?php
+if(get_field('kit_image')): 
+$image = get_field('kit_image');
+$caption = $image['caption']; ?>
 <section class="course_kit">
   <div class="course_lash_kit">
-    <img src="<?php echo get_theme_file_uri("assets/product.png") ?>" alt="">
-    <p>Free Lash Kit</p>
+    <img src="<?php echo esc_url(($image)['url'])?>"/>
+    <p><?php echo esc_attr($caption)?></p>
   </div>
   <div class="kit_content">
     <?php the_field('kit_provided'); ?>
   </div>
 </section>
+<?php endif; ?>
+
+<?php if(get_field('benefits')){ ?>
 <section class="banner">
   <h2 class="center">Benefits</h2> 
   <div class="banner_list">
@@ -38,6 +45,16 @@
   <h2 class="center">COURSE STRUCTURE</h2>
   <?php echo get_field('course_structure'); ?>
 </section>
+<?php } else{ ?>
+
+<section class="banner_course_structure">
+  <h2 class="center cocoa_text">COURSE STRUCTURE</h2>
+  <div class="banner_course_structure_list">
+    <?php echo get_field('course_structure'); ?>
+  </div>
+</section>
+
+<?php }?>
 
 <h2 class="center"> UPCOMING CLASSES</h2>
 
@@ -71,7 +88,7 @@
     ?>
     <div class="upcoming_section">
       <div class="class_info_left">
-        <img src=<?php echo get_theme_file_uri('assets/product.png'); ?> alt=""> <!-- sort out class image -->
+        <?php the_post_thumbnail() ?>
       </div>
       <div class="class_info_right">
         <?php echo '<h5>' . get_the_title() .' </h5>' ?>
