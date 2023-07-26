@@ -85,15 +85,15 @@
       </div>
       <div class="class_info_right">
         <?php echo '<h5>' . get_the_title() .' </h5>' ?>
-        <h6><?php echo get_field('class_date'); ?></h6> 
+        <h6 class="cafeaulait_text"><?php echo get_field('class_date'); ?></h6> 
+        <p class="cafeaulait_text"><?php echo get_field('class_timing'); ?></p>
         <?php if($trainers) ?>
-        <p> Need to add time </p>
-        <p> Trainer:
+        <p class="cafeaulait_text"> Trainer:
           <?php foreach($trainers as $trainer):
             echo get_the_title($trainer, $post->ID);
           endforeach; ?>
         </p>
-        <p>Country: <?php echo get_field('country') ?></p>
+        <p class="cafeaulait_text">Country: <?php echo get_field('country') ?></p>
       </div>
     </div>  
     <hr>

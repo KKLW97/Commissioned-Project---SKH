@@ -75,6 +75,7 @@ a {
   padding-left: 50px;
   padding-right: 50px;
   font-size: 25px;
+  align-items: center;
 }
 
 .details_right > h5, h4 {
@@ -89,6 +90,7 @@ a {
   flex-basis: 50%;
   display: flex;
   justify-content: center;
+  /* padding-left: 2em; */
 }
 
 .details_right {
