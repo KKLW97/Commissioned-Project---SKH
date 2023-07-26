@@ -48,27 +48,36 @@
     gap: 50px;
 }
 
+.course_lash_kit{
+    margin: 10px;
+    padding-left: 5%;
+}
+
 .course_lash_kit > img {
     grid-area: a;
     object-fit: stretch;
-    height: 250px;
+    height: 300px;
     width: 100%;
     opacity: 80%;
-    display: inline-block;
+    display: flex;
+    justify-self: center;
+    align-items: center;
     border-radius: 25px;
+    margin-top: 20px;
 }
 
 .course_lash_kit > p {
     grid-area: b;
     display: flex;
     justify-self: center;
+    align-items: center;
     margin: 15px;
     color: #A9846A;
 }
 
 .kit_content > p {
     margin: 10px 0px;
-    text-align: center;
+    padding-left: 30%;
     color: #A9846A;
 }
 
@@ -80,7 +89,8 @@
 .kit_content > ul{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    padding-left: 20%;
     margin: 10px;
     gap: 10px;
     color: #A9846A;
