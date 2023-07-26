@@ -9,28 +9,27 @@
 </section>
 
 <h2 class="cocoa_text">OUR COURSES</h2>
+<section class="course_section">
+<?php 
+    $upcomingCourses = new WP_Query(array(
+        'posts_per_page' => -1,
+        'post_type' => 'course'
+    ));
 
-<!-- rewrite this section to be scalable -->
-<section class="course_section ">
-  <div class="course_component">
-    <div class="course_image">
-      <img src="<?php echo get_theme_file_uri("assets/product.png") ?>" alt="Picture of micro cotton buds that are pink and blue">
-    </div>
-    <div class="course_content">
-      <h3 class="">LASH TRAINING</h3>
-      <button class="button-48"><a href='<?php echo site_url('/courses/lash-academy/');?>'>Learn More</a></button>
-    </div>
-  </div>
-  <div class="course_component">
-    <div class="course_image">
-      <img src="<?php echo get_theme_file_uri("assets/product.png") ?>" alt="Picture of micro cotton buds that are pink and blue">
-    </div>
-    <div class="course_content">
-      <h3>BROW TRAINING</h3>
-      <button class="button-48"><a href='<?php echo site_url('/courses/brow-academy/');?>'>Learn More</a></button>
-    </div>
-    </div>
-</section>
+    while($upcomingCourses->have_posts()){
+      $upcomingCourses->the_post(); ?>
+            <div class="course_component">
+              <div class="course_image">
+                <?php echo the_post_thumbnail(); ?>
+              </div>
+              <div class="course_content">
+                <h3 class=""><?php echo get_the_title() ?></h3>
+                <button class="button-48"><a href='<?php echo the_permalink();?>'>Learn More</a></button>
+              </div>
+            </div>
+    <?php } ?>
+</section> 
+
 
 
 <h2 class="cocoa_text">OUR TRAINER</h2>
