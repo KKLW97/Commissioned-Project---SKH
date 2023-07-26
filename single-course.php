@@ -24,21 +24,11 @@
     <p>Free Lash Kit</p>
   </div>
   <div class="kit_content">
-    <p>Kit Includes:</p>
-    <?php
-    $arr = get_field('kit_provided');
-    $str = explode (",", $arr);
-    echo '<ul class="kit_list">';
-    foreach($str as $s){
-        echo '<li class="kit_item">'.$s.'</li>';
-    }
-    echo '</ul>';
-    ?>
-    
+    <?php the_field('kit_provided'); ?>
   </div>
 </section>
 <section class="banner">
-  <h3 class="center">Benefits</h3> <!-- look up ACF documentation -->
+  <h2 class="center">Benefits</h2> 
   <div class="banner_list">
     <?php the_field('benefits'); ?>
   </div>
@@ -46,7 +36,7 @@
 
 <section class="course_structure">
   <h2 class="center">COURSE STRUCTURE</h2>
-  <p><?php echo get_field('course_structure'); ?></p>
+  <?php echo get_field('course_structure'); ?>
 </section>
 
 <h2 class="center"> UPCOMING CLASSES</h2>
