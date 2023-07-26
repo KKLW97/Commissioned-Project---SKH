@@ -48,7 +48,7 @@ $caption = $image['caption']; ?>
 <?php } else{ ?>
 
 <section class="banner_course_structure">
-  <h2 class="center cocoa_text">COURSE STRUCTURE</h2>
+  <h2 class="center">COURSE STRUCTURE</h2>
   <div class="banner_course_structure_list">
     <?php echo get_field('course_structure'); ?>
   </div>
@@ -102,7 +102,8 @@ $caption = $image['caption']; ?>
         </p>
         <p class="cafeaulait_text">Country: <?php echo get_field('country') ?></p>
       </div>
-    </div>  
+    </div>
+  
     <hr>
   <?php }
   wp_reset_query();
