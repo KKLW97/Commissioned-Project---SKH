@@ -7,7 +7,7 @@ get_header();
 <section class="location_one">
     <div class="map_container">
         <div class="location">
-            <h2>London Beauty Clinic & Academy</h2>
+            <h3>London</h3>
             <!-- create div seperate date and times -->
             <div class="day">
                 <ul>
@@ -42,7 +42,7 @@ get_header();
 <section class="location_two">
     <div class="map_container">
         <div class="location">
-            <h2>Dubai Lash Bar & Academy</h2>
+            <h3>Dubai</h3>
             <div class="day">
                 <ul>
                     <li>Monday:</li>
@@ -71,7 +71,7 @@ get_header();
         </div>
     </div>
 </section>
-<?php
 
+<?php
 get_footer();
 ?>

@@ -152,23 +152,27 @@
 }
 
 .banner_course_structure > h2 {
-    margin: 10px;
+    /* margin: 10px; */
     text-transform: uppercase;
 }
 
 .banner_course_structure_list {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
 .banner_course_structure_list > ul {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 10px;
+    /* margin: 10px; */
     gap: 5px;
     font-size: 25px;
     font-weight: 300;
     color: #412920;
+    text-align: left;
+    width: 100%;
+    position:relative;
+    left: 30%;
 }
 
 .upcoming_section {
@@ -246,11 +250,15 @@ hr {
 .course_structure > ul {
     display: flex;
     flex-direction: column;
-    padding-left: 28%;
+    /* padding-left: 28%; */
     color: #a9846a;
     font-weight: 300;
     font-size: 25px;
     gap: 5px;
+    text-align: left;
+    width: 100%;
+    position:relative;
+    left: 25%;
 }
 
 .course_structure {
