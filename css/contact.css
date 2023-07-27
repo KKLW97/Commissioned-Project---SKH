@@ -9,10 +9,11 @@
     grid-area: a;
     display: grid;
     grid-template-rows: 20% 50% 30%;
+    /* add extra grid area to align lists */
     grid-template-areas: 
-    "c"
-    "d"
-    "e";
+    "c c"
+    "d e"
+    "f f";
 }
 
 .location > h2 {
@@ -20,11 +21,22 @@
     align-self: center;
 }
 
-.location > ul {
+.day > ul {
     grid-area: d;
     display: flex;
     flex-direction: column;
-    padding-left: 40%;
+    padding-left: 75%;
+    color: #a9846a;
+    font-weight: 300;
+    font-size: 20px;
+    gap: 5px;
+}
+
+.time > ul {
+    grid-area: e;
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 40%; */
     color: #a9846a;
     font-weight: 300;
     font-size: 20px;
