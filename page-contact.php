@@ -3,24 +3,14 @@ get_header();
 ?>
 
 <h1 class="cocoa_text"> <?php echo get_the_title(); ?> </h1>
-<<<<<<< HEAD
-
 <div class="contact_form_container"> 
     <div class="overall_form">
         <?php echo do_shortcode('[wpforms id="123"]'); ?>
         <!-- CONFIGURE CAPTCHA -->
     </div>
 </div>
-
-
-<section class="london_map">
-
-<section class="location_one">
-=======
-<!-- CONTACT FORM GOES HERE -->
 <h2>OUR LOCATIONS</h2>
 <section class="locations">
->>>>>>> feature/map
     <div class="map_container">
 
         <div class="address_container">
@@ -80,15 +70,6 @@ get_header();
                     <li>10:00am - 4:00pm</li>
                 </ul>
             </div>
-<<<<<<< HEAD
-        </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11391.494268623099!2d55.13929146451265!3d25.11875790256082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f153e3609c979%3A0x5945a418a804ac5!2sAtlantis%2C%20The%20Palm!5e0!3m2!1sen!2suk!4v1690453833785!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-</section>
-
-=======
 
             <div class="contact_location">
                 <ul>
@@ -102,7 +83,6 @@ get_header();
 
 </section>
 
->>>>>>> feature/map
 <?php
 get_footer();
 ?>
