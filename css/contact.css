@@ -50,6 +50,7 @@
     display: flex;
     flex-direction: column;
     /* padding-left: 40%; */
+    text-align: right;
     color: #a9846a;
     font-weight: 300;
     font-size: 20px;
