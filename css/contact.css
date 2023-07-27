@@ -19,7 +19,6 @@
 }
 
 .address_container > h3 {
-    /* grid-area: c; */
     text-align: center;
 }
 
@@ -29,19 +28,17 @@
 
 .day {
     position: relative;
-    margin: 10px;
+    margin: 30px;
 }
 .time {
     position: relative;
-    margin: 10px;
-
+    margin: 30px;
 }
 
 .day > ul {
     grid-area: c;
     display: flex;
     flex-direction: column;
-    /* padding-left: 30%; */
     color: #a9846a;
     font-weight: 300;
     font-size: 20px;
@@ -52,7 +49,6 @@
     grid-area: d;
     display: flex;
     flex-direction: column;
-    /* padding-left: 40%; */
     text-align: right;
     color: #a9846a;
     font-weight: 300;
@@ -63,14 +59,12 @@
 .contact_location {
     grid-area: e;
     margin: 30px;
-
 }
 
 .contact_location > ul {
     grid-area: e;
     display: flex;
     flex-direction: column;
-    /* padding-left: 40%; */
     color: #a9846a;
     font-weight: 300;
     font-size: 20px;
@@ -79,22 +73,13 @@
 
 .map{
     grid-area: b;
-    /* position: relative;
-    padding: 30%; 
-    margin-bottom: 10px; */
-    /* height: 0; */
-    /* overflow: hidden; */
     display: flex;
     justify-content: center;
 }
 
 .map > iframe{
-    /* position: absolute; */
-    /* object-fit: contain; */
-    /* top: 0;
-    left: 0;
+    max-height: 400px;
     max-width: 600px;
-    max-height: 450px; */
     width: 100% !important;
-    height: 450 !important;
+    height: 450px !important;
 }
