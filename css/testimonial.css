@@ -3,8 +3,6 @@
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
-    /* background-color: rgba(185, 134, 99, .5); */
-    
 }
 
 .single_card{
@@ -34,3 +32,56 @@
   background: none; 
 }
 
+.wp-gr .grw-slider .grw-slider-header-inner, .wp-gr .grw-slider .grw-slider-review-inner {
+  background-color: #A9846A !important;
+  border-radius: 25px !important;
+  box-shadow: 6px 6px 4px 0px #FAF0E6 !important; 
+}
+
+.wp-gr .wp-google-text {
+  color: #FAF0E6 !important;
+  font-family: 'Pontano Sans', sans-serif !important;
+  letter-spacing: 0.05em !important;
+}
+
+.wp-gr .grw-slider .wp-google-review {
+  max-height: 350px !important;
+}
+
+.wp-gr .grw-slider .wp-google-feedback {
+  max-height: 250px!important;
+}
+
+.wp-gr.wpac a.wp-google-name {
+  color: #FAF0E6!important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  justify-content: center !important;
+  font-family: 'Pontano Sans', sans-serif !important;
+  letter-spacing: 0.05em !important;
+  margin-top: 10px !important;
+}
+
+.wp-gr .wp-google-time {
+  color: #FAF0E6!important;
+  display: none;
+}
+
+.wp-gr.wpac .wp-google-review .wp-google-stars {
+  margin-bottom: 15px !important;
+  display: flex !important;
+  justify-content: center !important;
+
+}
+
+.wp-gr.wpac .wp-google-left img {
+  display: none;
+}
+
+.wp-gr .grw-slider .grw-slider-review-inner>svg {
+  display: none;
+}
+
+path {
+  fill: #FAF0E6 !important;
+}
