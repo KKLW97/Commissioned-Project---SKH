@@ -77,7 +77,22 @@
                 </div>
                 <div class="hide">
                     <?php echo the_excerpt(); ?>
-                    <button class="enquire_btn"><a href="<?php echo site_url('academy/');?>">FIND OUT MORE</a></button>
+                    <!-- <?php $academy = get_field('course_class'); ?> -->
+                    <!-- <button class="enquire_btn"><a href="<?php echo get_permalink($academy->ID);?>">FIND OUT MORE</a></button>
+                    <button class="enquire_btn"><a href="<?php echo get_field('course_class',$academy->ID);?>">FIND OUT MORE</a></button> -->
+                    <?php
+                    $training = get_field('course_class');
+
+                    if ($training) {
+                    
+                      foreach ($training as $post) {
+                        setup_postdata($post);
+                        echo '<button class="enquire_btn"><a href="' . get_permalink() . '">' . "FIND OUT MORE" . '</a></button>';
+                      }
+                      wp_reset_postdata();
+                    }
+                    ?>
+                    <!-- <button class="enquire_btn"><a href="<?php echo get_permalink();?>">FIND OUT MORE</a></button> -->
                 </div>
             </div>
         <?php }
