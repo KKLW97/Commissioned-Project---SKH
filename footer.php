@@ -6,7 +6,7 @@
         
         <div class="footer_top_right">
             <div class="footer_nav">
-                <h5 className="footer_headers">Useful Links</h5>
+                <h5 className="footer_headers">USEFUL LINKS</h5>
                 <div class="footer_nav_list">
                     <a href="#">About Us</a>
                     <a href="#">FAQ</a>
@@ -26,12 +26,12 @@
                 <p>W1U 1JN</p>
             </div>
             <div class="contact_section">
-                <h5> Contact </h5> 
+                <h5> CONTACT </h5> 
                 <p><a class="contact" href="mailto:info@skh-london.com"> E: info@skh-london.com </a></p> 
                 <p><a class="contact" href="tel: +44 (238)4923084"> T: 02384923084 </a></p>
             </div>
             <div class="social_media">
-                <h5 class="footer_headers">Connect With Us</h5>
+                <h5 class="footer_headers">CONNECT</h5>
                 <ul class="social_media_icons">
                     <li>
                         <a href="https://www.facebook.com/Sumera.K.Hussain/?locale=en_GB" class="social-color-facebook"><i class="fa-brands fa-facebook-f fa-2xl" aria-hidden="true"></i></a>

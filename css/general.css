@@ -50,11 +50,5 @@ body {
 h1, h2, h3 {
   font-family: 'Stint Ultra Expanded', cursive;
   text-transform: uppercase;
-}
-
-@font-face { 
-  font-family: 'Montserrat'; 
-  font-style: normal;
-  font-weight: normal;
-  src: local('fonts/Montserrat/static/Montserrat-Regular.ttf'), url('Montserrat-Regular.ttf') format('tff');
+  color: #412920;
 }
