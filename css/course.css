@@ -28,12 +28,12 @@
 }
 
 .actual_price {
-    font-size: 50px;
+    font-size: 40px;
     text-decoration: line-through;
 }
 
 .discount_price {
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .overview > p {
@@ -114,7 +114,7 @@
   
 .kit_content {
     flex-basis: 50%;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
@@ -140,7 +140,7 @@
     text-align: center;
     margin: 10px;
     gap: 5px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     color: #412920;
 }
@@ -166,7 +166,7 @@
     grid-template-columns: 1fr;
     margin: 10px;
     gap: 5px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     color: #412920;
 }
@@ -249,7 +249,7 @@ hr {
     padding-left: 28%;
     color: #a9846a;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
     gap: 5px;
 }
 
@@ -262,5 +262,5 @@ hr {
     color: #a9846a;
     font-weight: 300;
     text-align: justify;
-    font-size: 25px;
+    font-size: 20px;
 }
