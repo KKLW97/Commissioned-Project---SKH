@@ -4,7 +4,13 @@ get_header();
 
 <h1 class="cocoa_text"> <?php echo get_the_title(); ?> </h1>
 
-<?php echo do_shortcode('[wpforms id="123"]'); ?>
+<div class="contact_form_container"> 
+    <div class="overall_form">
+        <?php echo do_shortcode('[wpforms id="123"]'); ?>
+        <!-- CONFIGURE CAPTCHA -->
+    </div>
+</div>
+
 
 <section class="london_map">
 
@@ -75,7 +81,6 @@ get_header();
         </div>
     </div>
 </section>
-<?php
 
 <?php
 get_footer();

@@ -58,3 +58,48 @@
     width: 100% !important;
     height: 100% !important;
 }
+
+.contact_form_container {
+    display: flex;
+    justify-content: center;
+}
+
+.overall_form {
+    margin: 0 20%;
+    padding: 20px 40px;
+    max-width: 650px;
+    max-height: 785px;
+    background-color: #a9846a;
+    border-radius: 25px;
+}
+
+.wpforms-container.contact_form {
+    margin: 0 auto !important;
+    max-width: 500px !important;
+    width: 500px !important;
+}
+ 
+.contact_form .wpforms-submit-container  {
+    display: inline-block;
+    text-align: center;
+    width: 100% !important;
+}
+ 
+.contact_form .wpforms-field-pagebreak  {
+    display: inline-block;
+    text-align: center;
+    width: 100% !important;   
+}
+ 
+.contact_form .wpforms-pagebreak-left .wpforms-page-button:before,.wpf-center .wpforms-pagebreak-left .wpforms-page-button:after {
+    content: none;
+} 
+
+.submit_button {
+    background-color: #412920 !important;
+}
+
+.wpforms-field-label, 
+.wpforms-container .wpforms-form label {
+color: #FAF0E6 !important;
+}
