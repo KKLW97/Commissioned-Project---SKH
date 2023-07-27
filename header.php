@@ -58,7 +58,7 @@
               </li>
 
               <li <?php if(is_page('contact-us')) echo 'class="current_menu_item"' ?>> 
-                <a href="<?php echo site_url('contact-us/');?>"> CONTACT </a>
+                <a href="<?php echo site_url('contact/');?>"> CONTACT </a>
               </li>
 
               <li>
