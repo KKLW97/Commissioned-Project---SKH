@@ -1,21 +1,23 @@
 .locations {
+    margin: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .map_container {
     display: grid;
-    grid-template-rows: 20% 55% 25%;
+    grid-template-rows: 15% 60% 25%;
     grid-template-areas:
     "a a a"
     "b b b"
     "c d e";
-    padding: 50px;
-    margin: 0 10%;
+    padding: 0 50px;
+    margin: 0 5%;
 }
 
 .address_container {
     grid-area: a;
+    /* margin-left: 30px; */
 }
 
 .address_container > h3 {
@@ -23,16 +25,16 @@
 }
 
 .address {
-    margin: 10% 0;
+    /* margin: 10% 0; */
 }
 
 .day {
     position: relative;
-    margin: 30px;
+    margin-top: 20px;
 }
 .time {
     position: relative;
-    margin: 30px;
+    margin-top: 20px;
 }
 
 .day > ul {
@@ -41,7 +43,7 @@
     flex-direction: column;
     color: #a9846a;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 10px;
     gap: 5px;
 }
 
@@ -52,13 +54,13 @@
     text-align: right;
     color: #a9846a;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 10px;
     gap: 5px;
 }
 
 .contact_location {
     grid-area: e;
-    margin: 30px;
+    margin: 20px;
 }
 
 .contact_location > ul {
@@ -67,7 +69,7 @@
     flex-direction: column;
     color: #a9846a;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 10px;
     gap: 5px;
 }
 
@@ -82,6 +84,7 @@
     max-width: 600px;
     width: 100% !important;
     height: 450px !important;
+    margin-bottom: 50px;
 }
 
 .contact_form_container {
@@ -92,6 +95,7 @@
 .overall_form {
     margin: 0 20%;
     padding: 20px 40px;
+    margin-bottom: 50px;
     max-width: 650px;
     max-height: 785px;
     background-color: #a9846a;

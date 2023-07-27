@@ -6,6 +6,7 @@ get_header();
 <div class="contact_form_container"> 
     <div class="overall_form">
         <?php echo do_shortcode('[wpforms id="123"]'); ?>
+        <?php echo do_shortcode('[wpforms id="129"]'); ?>
         <!-- CONFIGURE CAPTCHA -->
     </div>
 </div>
