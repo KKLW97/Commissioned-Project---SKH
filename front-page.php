@@ -76,7 +76,8 @@
                     <h3 class="center"><?php echo get_field('country'); ?></h3> 
                 </div>
                 <div class="hide">
-                    <p><?php echo the_excerpt(); ?></p>
+                    <?php echo the_excerpt(); ?>
+                    <button class="enquire_btn"><a href="<?php echo site_url('academy/');?>">FIND OUT MORE</a></button>
                 </div>
             </div>
         <?php }
