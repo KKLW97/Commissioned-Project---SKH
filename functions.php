@@ -25,8 +25,8 @@ function skh_javascript_files(){
 add_action('wp_enqueue_scripts', 'skh_javascript_files');
 
 function add_google_fonts() {
-    // wp_enqueue_style('add_google_fonts', '//fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&family=Montserrat:wght@200&family=Roboto:wght@100&display=swap', false);
     wp_enqueue_style('add_google_fonts', '//fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap', false);
+    wp_enqueue_style('adds_pontano_font', '//fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&family=Montserrat:wght@200&family=Pontano+Sans:wght@300&family=Roboto:wght@100&display=swap', false);
 }
 
 add_action('wp_enqueue_scripts', 'add_google_fonts');

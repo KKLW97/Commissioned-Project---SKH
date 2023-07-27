@@ -3,6 +3,10 @@
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&family=Montserrat:wght@200&family=Pontano+Sans:wght@300&family=Roboto:wght@100&display=swap');
+</style>
+
     <?php wp_head(); ?>
   </head> 
 
