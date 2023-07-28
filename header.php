@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&family=Montserrat:wght@200&family=Pontano+Sans:wght@300;600;700&family=Roboto:wght@100&display=swap');
-    </style>
+    </style> 
 
-
-    <?php wp_head(); ?>
+<?php wp_head(); ?>
   </head> 
 
   <body <?php body_class(); ?>>

@@ -2,20 +2,19 @@
     get_header();
 ?>
 <section class="main_display">
-<!-- <div class="container">
-    <div class="carousel">
-        <div class="slider">
-            <section> picture 1 </section>
-            <section> picture 2 </section>
-            <section> picture 3 </section>
-            <section> picture 4 </section>
-        </div>
-        <div class="controls">
-            <span class="arrow left">left</span>
-            <span class="arrow right">right</span>
-        </div>
-    </div>
-</div> -->
+
+
+
+
+<div class="your-class">
+  <div data-slick-index="1" aria-hidden="false" style="width: 405px; position: relative; left: -405px; top: 0px; z-index: 999; opacity: 1;" tabindex="-1" role="option" aria-describedby="slick-slide91"><img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" alt="topless man measuring his abdomen"></div>
+  <div data-slick-index="1" aria-hidden="false" style="width: 405px; position: relative; left: -405px; top: 0px; z-index: 999; opacity: 1;" tabindex="-1" role="option" aria-describedby="slick-slide91"><img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" alt="topless man measuring his abdomen"></div>
+</div>
+
+
+
+
+
 <img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" alt="topless man measuring his abdomen">
 
 <p class="announcement_bar beige_text center"><?php 
