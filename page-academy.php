@@ -23,8 +23,8 @@
                 <?php echo the_post_thumbnail(); ?>
               </div>
               <div class="course_content">
-                <h3 class=""><?php echo get_the_title() ?></h3>
-                <button class="button-48"><a href='<?php echo the_permalink();?>'>Learn More</a></button>
+                <h3><?php echo get_the_title() ?></h3>
+                <button class="training_btn"><a href='<?php echo the_permalink();?>'>Learn More</a></button>
               </div>
             </div>
     <?php } ?>
@@ -64,7 +64,9 @@
 <?php echo do_shortcode('[grw id="85"]'); ?> 
 </section>
 
-<!-- there is now an academy instagram -->
+<section class="instagram">
+<?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+</section> 
 
 <?php 
   get_footer();

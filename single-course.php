@@ -58,7 +58,7 @@ $caption = $image['caption']; ?>
 
 <h2 class="center"> UPCOMING CLASSES</h2>
 
-<section class="upcoming_classes">
+<section>
 <?php
     $upcomingClasses = new WP_Query(array(
     'posts_per_page' => 3,
@@ -112,5 +112,9 @@ $caption = $image['caption']; ?>
 <div class="skh_contact">
   <a href="<?php echo site_url('contact-us/');?>"><button class="skh_contact_button">START YOUR JOURNEY WITH SKH</button></a>
 </div>
+
+<section class="instagram">
+<?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+</section> 
 
 <?php get_footer();?>
