@@ -1,5 +1,3 @@
-// import FrontPage from "./modules/FrontPage";
+import HeroSlider from "./modules/HeroSlider";
 
-// const frontPage = new FrontPage();
-
-// alert("hi");
+const heroSlider = new HeroSlider();
