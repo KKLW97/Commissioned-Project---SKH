@@ -39,8 +39,8 @@ h1, h2 {
   margin-bottom: 10px;
 }
 
-.course_content > button {
-  background-color: #A9846A;
+.training_btn {
+  background-color: #412920;
   color: white;
   margin: 0px;
   font-weight: 600;
@@ -52,6 +52,17 @@ h1, h2 {
   letter-spacing: 0.1em;
   padding: 10px;
   text-transform: uppercase;
+  transition: background-color 1s;
+}
+
+.training_btn:hover {
+  background-color: #A9846A;
+}
+
+.training_btn:focus,
+.training_btn:active {
+  background-color: #412920;
+  transition: none;
 }
 
 .course_content > button,
