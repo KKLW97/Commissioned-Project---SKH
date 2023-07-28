@@ -89,6 +89,10 @@
 <?php echo do_shortcode('[grw id="85"]'); ?> 
 </section>
 
+<section class="instagram">
+<?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+</section>
+
 <?php 
     get_footer();
 ?>
