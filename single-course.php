@@ -110,7 +110,7 @@ $caption = $image['caption']; ?>
 ?>
 </section>
 <div class="skh_contact">
-  <a href="<?php echo site_url('contact-us/');?>"><button class="skh_contact_button">START YOUR JOURNEY WITH SKH</button></a>
+  <a href="<?php echo site_url('contact/');?>"><button class="skh_contact_button">START YOUR JOURNEY WITH SKH</button></a>
 </div>
 
 <section class="instagram">
