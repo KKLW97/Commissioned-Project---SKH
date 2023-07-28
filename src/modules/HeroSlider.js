@@ -1,12 +1,5 @@
-import "slick-carousel";
-import $ from 'jquery';
+import Glide from '@glidejs/glide';
 
-$(document).ready(function(){
-    $('.your-class').slick({
-        fade: true
-    })
-  });
-      
-export default HeroSlider;
+new Glide('.glide').mount()
 
-
+export default HeroSlider

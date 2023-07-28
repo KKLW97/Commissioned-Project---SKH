@@ -3,19 +3,11 @@
 ?>
 <section class="main_display">
 
-
-
-
-<div class="your-class">
-  <div data-slick-index="1" aria-hidden="false" style="width: 405px; position: relative; left: -405px; top: 0px; z-index: 999; opacity: 1;" tabindex="-1" role="option" aria-describedby="slick-slide91"><img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" alt="topless man measuring his abdomen"></div>
-  <div data-slick-index="1" aria-hidden="false" style="width: 405px; position: relative; left: -405px; top: 0px; z-index: 999; opacity: 1;" tabindex="-1" role="option" aria-describedby="slick-slide91"><img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" alt="topless man measuring his abdomen"></div>
-</div>
-
-
-
-
-
-<img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" alt="topless man measuring his abdomen">
+<section class="hero_slider">
+<?php
+echo do_shortcode('[smartslider3 slider="2"]');
+?>
+</section>
 
 <p class="announcement_bar beige_text center"><?php 
     $annoucementBar = new WP_Query(array(

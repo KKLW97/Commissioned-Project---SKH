@@ -14,6 +14,6 @@
     "@wordpress/scripts": "26.9.0"
   },
   "dependencies": {
-    "slick-carousel": "^1.8.1"
+    "@glidejs/glide": "^3.6.0"
   }
 }
