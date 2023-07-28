@@ -1,7 +1,20 @@
+.upcoming_classes {
+    display: grid;
+    /* grid-template-columns: 20% 60% 20%; */
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+}
+
+.upcoming_classes > h2 {
+    grid-area: a;
+    margin-top: 20px;
+}
+
 .update_section {
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    grid-area: b;
+    padding: 20px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -55,15 +68,17 @@
     border-radius: 25px;
 }
 
-
 .hide {
     display: none;
     position: absolute;
     color: white;
     width: fit-content;
     margin: 0px;
-    /* z-index: 1; */
     font-size: 20px;
+}
+
+.update_component:hover > .hide > p {
+    text-align: center;
 }
 
 .update_component:hover > .hide {
@@ -72,7 +87,6 @@
     color: white;
     width: fit-content;
     margin: 0px;
-    /* z-index: 1; */
     place-self: center;
 }
 
@@ -82,4 +96,33 @@
 
 .update_component:hover > .update_image {
     opacity: 80%;
+}
+
+.enquire_btn {
+    grid-area: c;
+    display: flex;
+    justify-self: center;
+    background-color: #412920;
+    color: white;
+    margin: 10px;
+    font-weight: normal;
+    font-stretch: ultra-condensed;
+    border-radius: 15px;
+    border-width: 0;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    padding: 8px 50px;
+    text-transform: uppercase;
+    transition: background-color 1s;
+}
+
+.enquire_btn:hover {
+    background-color: #A9846A;
+}
+
+.enquire_btn:focus,
+.enquire_btn:active {
+  background-color: #412920;
+  transition: none;
 }

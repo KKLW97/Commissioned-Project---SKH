@@ -58,7 +58,7 @@ $caption = $image['caption']; ?>
 
 <h2 class="center"> UPCOMING CLASSES</h2>
 
-<section class="upcoming_classes">
+<section>
 <?php
     $upcomingClasses = new WP_Query(array(
     'posts_per_page' => 3,

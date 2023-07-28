@@ -235,6 +235,17 @@
     letter-spacing: 0.1em;
     padding: 8px 50px;
     text-transform: uppercase;
+    transition: background-color 1s;
+}
+
+.skh_contact_button:hover {
+    background-color: #A9846A;
+}
+
+.skh_contact_button:focus,
+.skh_contact_button:active {
+  background-color: #412920;
+  transition: none;
 }
 
 hr {
