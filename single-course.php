@@ -113,4 +113,8 @@ $caption = $image['caption']; ?>
   <a href="<?php echo site_url('contact-us/');?>"><button class="skh_contact_button">START YOUR JOURNEY WITH SKH</button></a>
 </div>
 
+<section class="instagram">
+<?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+</section> 
+
 <?php get_footer();?>
