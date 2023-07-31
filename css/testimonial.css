@@ -1,8 +1,7 @@
 .testimonial_cards{
     display: flex;
     text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin: 0px 50px;
 }
 
 .single_card{
