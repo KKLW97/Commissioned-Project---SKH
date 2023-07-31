@@ -47,7 +47,7 @@ $counter = 0;
                 <?php echo get_field('service_description') ?> 
             </div>
             <div class=img_<?php echo $layout_class ?>>
-                <?php echo the_post_thumbnail(); ?> 
+                <?php echo the_post_thumbnail("serviceImage"); ?> 
             </div>
         </div>
         <?php } 
