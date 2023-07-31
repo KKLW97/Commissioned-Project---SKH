@@ -45,7 +45,7 @@ $counter = 0;
                 <?php echo get_field('service_description') ?> 
             </div>
             <div class=img_<?php echo $layout_class ?>>
-                <?php echo the_post_thumbnail(); ?> 
+                <?php echo the_post_thumbnail("serviceImage"); ?> 
             </div>
         </div>
         <?php } 
@@ -53,6 +53,10 @@ $counter = 0;
 wp_reset_postdata();
 ?>
 </section>
+
+<div class="skh_contact">
+  <a href="https://shorturl.at/BEU06"><button class="skh_contact_button">BOOK NOW</button></a>
+</div>
 
 <section class="instagram">
 <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
