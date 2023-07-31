@@ -16,6 +16,11 @@
         'order' => 'ASC',
         'meta_query' => array(
             array(
+                'key' => 'announcement_type',
+                'compare' => 'NOT EXISTS',
+                'value' => get_the_ID()
+            ),
+            array(
                 'key' => 'announcement_end_date',
                 'compare' => '>=',
                 'value' => date('Ymd'),

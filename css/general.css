@@ -60,3 +60,10 @@ h1, h2, h3 {
   height: 300px;
   max-height: 300px;
 }
+
+/* .static_hero_image {
+  margin: 0px;
+  padding: 0px;
+  min-width: 100%;
+  min-height: 100%;
+} */
