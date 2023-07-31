@@ -56,6 +56,10 @@ wp_reset_postdata();
 ?>
 </section>
 
+<div class="skh_contact">
+  <a href="https://shorturl.at/BEU06"><button class="skh_contact_button">BOOK NOW</button></a>
+</div>
+
 <section class="instagram">
 <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
 </section>
