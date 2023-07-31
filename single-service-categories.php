@@ -6,8 +6,6 @@ while (have_posts()) {
 
 <section class="static_hero_image">
     <?php echo the_post_thumbnail(); ?>
-    <!-- <?php echo the_content(); ?> -->
-
 </section>
 
 <h2> <?php the_title();?> </h2>

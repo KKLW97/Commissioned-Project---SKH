@@ -4,8 +4,8 @@
 
 <h1 class="cocoa_text"> <?php echo get_the_title(); ?> </h1>
 
-<section class="main display">
-<img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" height="300px" alt="topless man measuring his abdomen">
+<section class="static_hero_image">
+    <?php echo the_post_thumbnail(); ?>
 </section>
 
 <h2 class="cocoa_text">OUR COURSES</h2>

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<section class="main display">
-<img class="hero_image" src="<?php echo get_theme_file_uri("assets/HealthyMan.png") ?>" height="300px" alt="topless man measuring his abdomen">
+<section class="static_hero_image">
+    <?php echo the_post_thumbnail(); ?>
 </section>
 
 <div class="course_title cafeaulait_text center">
