@@ -27,3 +27,10 @@
 .img_right{
 
 }
+
+.static_hero_image > img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    max-height: 300px;
+}
