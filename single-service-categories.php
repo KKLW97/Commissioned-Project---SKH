@@ -18,6 +18,39 @@ while (have_posts()) {
     } ?>
 <div>
 
+<section class="service_section">
+<?php 
+    $availableServices = new WP_Query(array(
+        'posts_per_page' => -1,
+        'post_type' => 'services',
+        'meta_query' => array(
+            array(
+              'key' => 'related_service_category',
+              'value' => get_the_ID(),
+              'compare' => 'LIKE'
+          )
+        )
+));
+
+    while($availableServices->have_posts()){
+        $availableServices->the_post(); ?>
+        <div class="single_service">
+            <div class="description_right">
+                <h3><?php echo get_the_title(); ?></h3>
+                <?php echo get_field('service_description') ?> 
+            </div>
+            <div class=img_left>
+                <?php echo the_post_thumbnail(); ?> 
+            </div>
+        </div>
+        <?php } 
+
+wp_reset_postdata();
+?>
+</section>
+
+
+
 <section class="instagram">
 <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
 </section>

@@ -2,3 +2,28 @@
     margin: 0px 50px;
     text-align: justify;
 }
+
+.service_section{
+    margin: 0px 50px;  
+}
+
+.single_service {
+    display: flex;
+    flex-direction: row;
+}
+
+.description_right{
+    
+}
+
+.img_left{
+
+}
+
+.description_left{
+
+}
+
+.img_right{
+
+}

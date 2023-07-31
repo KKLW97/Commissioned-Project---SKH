@@ -69,6 +69,11 @@ function skh_adjust_queries($query){
         $query->set('order', 'ASC');
     }
 
+    if(!is_admin() AND is_post_type_archive('services') AND is_main_query()) {
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
+    }
+
 }
 add_action('pre_get_posts', 'skh_adjust_queries');
 
