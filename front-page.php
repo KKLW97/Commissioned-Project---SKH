@@ -17,8 +17,8 @@
         'meta_query' => array(
             array(
                 'key' => 'announcement_type',
-                'compare' => 'NOT EXISTS',
-                'value' => get_the_ID()
+                // 'compare' => 'NOT EXISTS'
+                'value' => NULL
             ),
             array(
                 'key' => 'announcement_end_date',

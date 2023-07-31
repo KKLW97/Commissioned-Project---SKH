@@ -1,36 +1,35 @@
 <?php get_header(); ?>
 <section class="main_display">
-<section class="static_hero_image">
-    <?php echo the_post_thumbnail(); ?>
-</section>
-<p class="announcement_bar beige_text center"><?php 
-    $annoucementBar = new WP_Query(array(
-        'posts_per_page' => 1,
-        'post_type' => 'announcement',
-        'meta_key' => 'announcement_end_date',
-        'orderby' => 'meta_value_num',
-        'order' => 'ASC',
-        'meta_query' => array(
-            array(
-                'key' => 'announcement_type',
-                'compare' => 'LIKE',
-                'value' => get_the_ID()
-            ),
-            array(
-                'key' => 'announcement_end_date',
-                'compare' => '>=',
-                'value' => date('Ymd'),
-                'type' => 'numeric'
-            )
-        )
-    ));
 
-    while($annoucementBar->have_posts()){
-        $annoucementBar->the_post(); ?>
-        <?php echo get_the_title(); ?>
-        <?php } 
-        wp_reset_postdata();
-?></p>
+  <?php echo the_post_thumbnail(); ?>
+  <p class="announcement_bar beige_text center"><?php 
+      $annoucementBar = new WP_Query(array(
+          'posts_per_page' => 1,
+          'post_type' => 'announcement',
+          'meta_key' => 'announcement_end_date',
+          'orderby' => 'meta_value_num',
+          'order' => 'ASC',
+          'meta_query' => array(
+              array(
+                  'key' => 'announcement_type',
+                  'compare' => 'LIKE',
+                  'value' => get_the_ID()
+              ),
+              array(
+                  'key' => 'announcement_end_date',
+                  'compare' => '>=',
+                  'value' => date('Ymd'),
+                  'type' => 'numeric'
+              )
+          )
+      ));
+
+      while($annoucementBar->have_posts()){
+          $annoucementBar->the_post(); ?>
+          <?php echo get_the_title(); ?>
+    <?php } 
+      wp_reset_postdata();
+  ?></p>
 </section>
 
 <div class="course_title cafeaulait_text center">
