@@ -8,9 +8,9 @@
             <div class="footer_nav">
                 <h5 className="footer_headers">USEFUL LINKS</h5>
                 <div class="footer_nav_list">
-                    <a href="#">About Us</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Privacy Policy</a>
+                    <a href="<?php echo site_url('team/');?>">About Us</a>
+                    <a href="<?php echo site_url('contact/');?>">Ask Us A Question</a>
+                    <a href="https://shorturl.at/BEU06">Book An Appointment</a>
                 </div>
             </div>
             <div class="location_london"> 
