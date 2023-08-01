@@ -28,9 +28,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 90%);
+    transform: translate(-50%, 70%);
     opacity: 1;
     text-align: center;
+    max-width: 160px;
+    max-height: 160px;
 }
 
 .hide_team_member{
@@ -42,6 +44,7 @@
     z-index: 0;
     opacity: 0;
     text-align: center;
+    max-width: 160px;
 }
 
 .single_member:hover > .member_image {
