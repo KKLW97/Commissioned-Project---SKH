@@ -40,9 +40,9 @@ get_header();
 
         <div class="contact_location">
             <ul>
-                <li><a class="contact" href="mailto:info@skh-london.com"><i class="fa-solid fa-envelope"></i>info@skh-london.com</a></li>
-                <li><a class="contact" href="tel: +44 (238)4923084"><i class="fa-solid fa-phone-volume"></i>02384923084</a></li>
-                <li><a href="https://shorturl.at/BEU06"><i class="fa-solid fa-calendar-days"></i>BOOK NOW</a></li>
+                <li><a class="contact" href="mailto:info@skh-london.com"><i class="fa-solid fa-envelope"></i> info@skh-london.com</a></li>
+                <li><a class="contact" href="tel: +44 (238)4923084"><i class="fa-solid fa-phone-volume"></i> 02384923084</a></li>
+                <li><a href="https://shorturl.at/BEU06"><i class="fa-solid fa-calendar-days"></i> BOOK NOW</a></li>
             </ul>
         </div>
     </div>
