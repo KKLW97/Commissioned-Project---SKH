@@ -1,5 +1,4 @@
 .locations {
-    margin: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -17,7 +16,6 @@
 
 .address_container {
     grid-area: a;
-    /* margin-left: 30px; */
 }
 
 .address_container > h3 {
@@ -25,16 +23,21 @@
 }
 
 .address {
-    /* margin: 10% 0; */
+    display: flex;
 }
 
 .day {
     position: relative;
-    margin-top: 20px;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-self: left;
 }
+
 .time {
     position: relative;
-    margin-top: 20px;
+    margin: 20px 0px 20px 20px;
+    display: flex;
+    justify-self: right;
 }
 
 .day > ul {
@@ -43,7 +46,6 @@
     flex-direction: column;
     color: #a9846a;
     font-weight: 300;
-    font-size: 10px;
     gap: 5px;
 }
 
@@ -51,25 +53,26 @@
     grid-area: d;
     display: flex;
     flex-direction: column;
-    text-align: right;
+    text-align: justify;
     color: #a9846a;
     font-weight: 300;
-    font-size: 10px;
     gap: 5px;
 }
 
 .contact_location {
     grid-area: e;
-    margin: 20px;
+    margin: 20px 0px 20px 20px;
+    display: flex;
+    justify-self: right;
 }
 
 .contact_location > ul {
     grid-area: e;
     display: flex;
+    text-align: justify;
     flex-direction: column;
     color: #a9846a;
     font-weight: 300;
-    font-size: 10px;
     gap: 5px;
 }
 
@@ -77,14 +80,19 @@
     grid-area: b;
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .map > iframe{
     max-height: 400px;
-    max-width: 600px;
-    width: 100% !important;
-    height: 450px !important;
+    width: 100%;
     margin-bottom: 50px;
+}
+
+.icon_space {
+    padding-left: 10px;
 }
 
 .contact_form_container {

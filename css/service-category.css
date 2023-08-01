@@ -1,5 +1,5 @@
 .service_category_summary > p{
-    margin: 0px 50px;
+    margin: 20px 50px;
     text-align: justify;
 }
 
@@ -7,25 +7,54 @@
     margin: 0px 50px;  
 }
 
-.single_service {
-    display: flex;
-    flex-direction: row;
-}
-
-.description_right{
-    
+.single_service_left {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "a b";
+    margin: 50px 0px;
 }
 
 .img_left{
-
+    grid-area: a;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .description_left{
+    grid-area: b;
+    position: relative;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
+.single_service_right {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "a b";
+    margin: 50px 0px;
 }
 
 .img_right{
+    grid-area: b;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
 
+.description_right{
+    grid-area: a;
+    position: relative;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .static_hero_image > img {

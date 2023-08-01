@@ -35,21 +35,20 @@
     color: #ffffff;
     font-size: 20px;
     margin: 0px;
-    /* z-index: 1; */
 }
 
 .update_content > h4 {
     position: relative;
     color: white;
     margin: 0px;
-    margin-bottom: 10px;
-    /* z-index: 1; */
 }
 
 .update_content {
-    /* z-index: 1; */
-    margin: 30px;
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .update_image {

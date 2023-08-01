@@ -3,7 +3,7 @@ get_header();
 
 ?>
 
-hi
+<h3 class="error">Error 404: Page Not Found</h3>
 
 <?php
 

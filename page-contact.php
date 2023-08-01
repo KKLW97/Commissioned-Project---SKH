@@ -16,7 +16,7 @@ get_header();
 
         <div class="address_container">
             <h3>London</h3>
-            <p class="address"><i class="fa-solid fa-location-dot"></i> 11-12 Gee's Ct, London W1U 1JN</p>
+            <p class="address"><i class="fa-solid fa-location-dot"></i><span class="icon_space">11-12 Gee's Ct, London W1U 1JN</p>
         </div>
 
         <div class="map"> 
@@ -40,9 +40,9 @@ get_header();
 
         <div class="contact_location">
             <ul>
-                <li><a class="contact" href="mailto:info@skh-london.com"><i class="fa-solid fa-envelope"></i>info@skh-london.com</a></li>
-                <li><a class="contact" href="tel: +44 (238)4923084"><i class="fa-solid fa-phone-volume"></i>02384923084</a></li>
-                <li><a href="https://shorturl.at/BEU06"><i class="fa-solid fa-calendar-days"></i>BOOK NOW</a></li>
+                <li><a class="contact" href="mailto:info@skh-london.com"><i class="fa-solid fa-envelope"></i><span class="icon_space">info@skh-london.com</a></li>
+                <li><a class="contact" href="tel: +44 (238)4923084"><i class="fa-solid fa-phone-volume"></i><span class="icon_space">02384923084</a></li>
+                <li><a href="https://shorturl.at/BEU06"><i class="fa-solid fa-calendar-days"></i><span class="icon_space">BOOK NOW</a></li>
             </ul>
         </div>
     </div>
@@ -51,7 +51,7 @@ get_header();
 
             <div class="address_container">
                 <h3>Dubai</h3>
-                <p class="address"><i class="fa-solid fa-location-dot"></i> Crescent Rd - The Palm Jumeirah - Dubai - United Arab Emirates</p>
+                <p class="address"><i class="fa-solid fa-location-dot"></i><span class="icon_space">Crescent Rd - The Palm Jumeirah - Dubai - United Arab Emirates</p>
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11391.494268623099!2d55.13929146451265!3d25.11875790256082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f153e3609c979%3A0x5945a418a804ac5!2sAtlantis%2C%20The%20Palm!5e0!3m2!1sen!2suk!4v1690453833785!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -74,9 +74,9 @@ get_header();
 
             <div class="contact_location">
                 <ul>
-                    <li><a class="contact" href="mailto:info@skh-london.com"><i class="fa-solid fa-envelope"></i>info@skh-london.com</a></li>
-                    <li><a class="contact" href="tel: +44 (238)4923084"><i class="fa-solid fa-phone-volume"></i>02384923084</a></li>
-                    <li><a href="https://shorturl.at/BEU06"><i class="fa-solid fa-calendar-days"></i>BOOK NOW</a></li>
+                    <li><a class="contact" href="mailto:info@skh-london.com"><i class="fa-solid fa-envelope"></i><span class="icon_space">info@skh-london.com</a></li>
+                    <li><a class="contact" href="tel: +44 (238)4923084"><i class="fa-solid fa-phone-volume"></i><span class="icon_space">02384923084</a></li>
+                    <li><a href="https://shorturl.at/BEU06"><i class="fa-solid fa-calendar-days"></i><span class="icon_space">BOOK NOW</a></li>
                 </ul>
             </div>
            
