@@ -8,7 +8,7 @@ while (have_posts()) {
     <?php echo the_post_thumbnail(); ?>
 </section>
 
-<h2> <?php the_title();?> </h2>
+<h1> <?php the_title();?> </h1>
 
 <div class="service_category_summary">
     <?php if(the_excerpt()){
