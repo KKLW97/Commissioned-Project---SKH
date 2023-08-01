@@ -12,6 +12,7 @@ function skh_theme_files () {
     wp_enqueue_style('academy_css', get_theme_file_uri('css/academy.css'));
     wp_enqueue_style('contact_css', get_theme_file_uri('css/contact.css'));
     wp_enqueue_style('front_page_css', get_theme_file_uri('css/front-page.css'));
+    wp_enqueue_style('team_css', get_theme_file_uri('css/team.css'));
     wp_enqueue_style('service_category_css', get_theme_file_uri('css/service-category.css'));
     wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v6.0.0/css/all.css');
     // wp_enqueue_style('montserrat_font', 'fonts/Montserrat/Montserrat-VariableFont_wght.ttf', false);

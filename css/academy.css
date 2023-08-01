@@ -3,8 +3,7 @@ h1, h2 {
 }
 
 .course_section {
-  padding-left: 50px;
-  padding-right: 50px;
+  margin: 0px 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
