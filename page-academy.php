@@ -27,7 +27,9 @@
                 <button class="training_btn"><a href='<?php echo the_permalink();?>'>Learn More</a></button>
               </div>
             </div>
-    <?php } ?>
+    <?php } 
+    wp_reset_postdata();
+    ?>
 </section> 
 
 
@@ -54,7 +56,9 @@
           <h5 class="cafeaulait_text "> <?php echo get_field('company_position')?> </h5>
         <p class="cocoa_text"><?php echo get_field('trainer_details')?></p>
       </div>
-    <?php } ?>
+    <?php } 
+      wp_reset_postdata();
+      ?>
 </section>
 
 <h2 class="center cocoa_text basic_font"> TESTIMONIALS </h2>
