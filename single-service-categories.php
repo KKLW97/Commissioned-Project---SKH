@@ -39,7 +39,7 @@ $counter = 0;
         $layout_class = ($counter % 2 === 0) ? 'right' : 'left';
         ?>
 
-        <div class="single_service">
+        <div class="single_service_<?php echo $layout_class ?>">
             <div class="description_<?php echo $layout_class ?>">
                 <h3><?php echo get_the_title(); ?></h3>
                 <?php echo get_field('service_description') ?> 
