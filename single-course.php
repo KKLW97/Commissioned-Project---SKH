@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 <section class="main_display">
 
-  <?php echo the_post_thumbnail(); ?>
+  <div class="static_hero_image">
+    <?php echo the_post_thumbnail(); ?>
+  </div>
+  
   <p class="announcement_bar beige_text center"><?php 
       $annoucementBar = new WP_Query(array(
           'posts_per_page' => 1,

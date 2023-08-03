@@ -37,7 +37,6 @@ function skh_features() {
     add_theme_support('post-thumbnails');
     add_image_size('trainerPortrait', 380, 350, true);
     add_image_size('serviceImage', 400, 400, true);
-    add_image_size('heroImage', 1000, 500, true);
 }
 
 add_action('after_setup_theme', 'skh_features');

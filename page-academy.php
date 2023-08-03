@@ -5,7 +5,9 @@
 <h1 class="cocoa_text"> <?php echo get_the_title(); ?> </h1>
 
 <section class="static_hero_image">
-    <?php echo the_post_thumbnail('heroImage'); ?>
+  <!-- <div class="hero_image_bg" style="background-image: url('<?php the_post_thumbnail(); ?>')"> -->
+    <?php echo the_post_thumbnail(); ?>
+  <!-- </div> -->
 </section>
 
 <h2 class="cocoa_text">OUR COURSES</h2>
