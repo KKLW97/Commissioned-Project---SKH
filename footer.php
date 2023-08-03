@@ -52,7 +52,7 @@
 
     <div class="footer_bottom">
         <p> ©2023 S.K.H | All rights reserved </p>
-        <p> Designed by Thibyaa Mahasivam and Kelly Kar Ling Wong </p>
+        <p> Designed by Mahasive Designs </p>
         <p> Powered by WordPress </p>
     </div>
         
