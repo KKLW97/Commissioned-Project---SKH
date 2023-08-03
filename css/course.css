@@ -306,3 +306,7 @@ hr {
     text-align: justify;
     font-size: 20px;
 }
+
+.class_info_right > h6 {
+    color: #412920;
+}
