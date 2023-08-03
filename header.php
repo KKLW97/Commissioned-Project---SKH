@@ -49,10 +49,6 @@
                 <a href="<?php echo site_url('/service_categories/weight-loss-clinic/');?>"> WEIGHT LOSS </a>
               </li>
 
-              <li <?php if(is_page('shop')) echo 'class="current_menu_item"' ?>>
-                <a href="<?php echo site_url('#');?>"> SHOP </a>
-              </li>
-
               <li <?php if(is_page('team')) echo 'class="current_menu_item"' ?>>
                 <a href="<?php echo site_url('team/');?>"> TEAM </a>
               </li>
@@ -63,12 +59,6 @@
 
               <li>
                 <a href="https://shorturl.at/BEU06"> BOOK </a>
-              </li>
-
-              <li>
-                <a href="#">
-                  <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
-                </a>
               </li>
 
             </ul>
