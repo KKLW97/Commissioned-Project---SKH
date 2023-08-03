@@ -44,7 +44,6 @@ li {
   float: left;
 }
 
-
 li a {
   color: #412920;
   font-size: 14px;
@@ -53,18 +52,14 @@ li a {
   text-decoration: none;
 }
 
-
 li a:hover {
   color: #B98663;
   text-decoration: underline;
 }
 
-
 .dropdown {
   float: left;
   position: relative;
-  /* display: inline-block; */
-  
 }
 
 .dropdown-content {

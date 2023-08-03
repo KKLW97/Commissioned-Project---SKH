@@ -5,7 +5,7 @@
 <h1 class="cocoa_text"> <?php echo get_the_title(); ?> </h1>
 
 <section class="static_hero_image">
-    <?php echo the_post_thumbnail(); ?>
+    <?php echo the_post_thumbnail('heroImage'); ?>
 </section>
 
 <h2 class="cocoa_text">OUR COURSES</h2>
@@ -31,8 +31,6 @@
     wp_reset_postdata();
     ?>
 </section> 
-
-
 
 <h2 class="cocoa_text">OUR TRAINER</h2>
 <section class="trainer_section ">
