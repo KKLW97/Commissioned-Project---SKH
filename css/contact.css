@@ -1,6 +1,10 @@
 .locations {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media (max-width: 992px) {
+        display: grid;
+        grid-template-columns: 1fr !important;
+  }
 }
 
 .map_container {
@@ -12,6 +16,9 @@
     "c d e";
     padding: 0 50px;
     margin: 0 5%;
+    @media (max-width: 992px) {
+        padding: 0%;
+  }
 }
 
 .address_container {
