@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-areas: "a b";
+    @media (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+  }
 }
 
 .footer_top_left {
@@ -22,6 +26,10 @@
     grid-template-areas: 
     "b c d e f"
     "b c d e g";
+    @media (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+  }
 }
 
 .footer_nav {
@@ -83,6 +91,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 5px;
+    
 }
 
 .footer_bottom {

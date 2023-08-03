@@ -3973,8 +3973,11 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_HeroSlider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/HeroSlider */ "./src/modules/HeroSlider.js");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './modules/BurgerMenu'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
 
 const heroSlider = new _modules_HeroSlider__WEBPACK_IMPORTED_MODULE_0__["default"]();
+const burgerMenu = new Object(function webpackMissingModule() { var e = new Error("Cannot find module './modules/BurgerMenu'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();
 })();
 
 /******/ })()

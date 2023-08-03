@@ -21,6 +21,9 @@
   padding: 8px 50px;
   background-color: #412920;
   font-weight: lighter;
+  @media (max-width: 992px) {
+    display: none;
+}
 }
 
 .container {

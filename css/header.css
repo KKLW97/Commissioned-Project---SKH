@@ -15,6 +15,10 @@ header {
   grid-area: a;
   max-height: 119px;
   max-width: 200px;
+  position: relative;
+  display: flex;
+  justify-self: center;
+  align-self: center;
 }
 
 .header_logo > img {

@@ -19,9 +19,7 @@
         </ul>
       </div>
       <header>
-          <div class="center">
             <a class="header_logo" href="<?php echo site_url();?>"><img src="<?php echo get_theme_file_uri('assets/RoseGoldLogo.jpg'); ?>" alt="SKH logo"></a>
-          </div>
           <div class="header_nav">
             <nav>
               <ul>
@@ -53,6 +51,12 @@
                 <a href="<?php echo site_url('team/');?>"> TEAM </a>
               </li>
 
+              <li <?php if(is_page('shop')) echo 'class="current_menu_item"' ?>>
+                  <a href="<?php echo site_url('#');?>"> SHOP </a>
+              </li>
+
+
+
               <li <?php if(is_page('contact-us')) echo 'class="current_menu_item"' ?>> 
                 <a href="<?php echo site_url('contact/');?>"> CONTACT </a>
               </li>
@@ -61,6 +65,13 @@
                 <a href="https://shorturl.at/BEU06"> BOOK </a>
               </li>
 
+              <li>
+                  <a href="#">
+                      <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+                  </a>
+              </li>
+
             </ul>
           </nav>
+        </div>
       </header>

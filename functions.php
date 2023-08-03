@@ -22,6 +22,7 @@ add_action('wp_enqueue_scripts', 'skh_theme_files');
 
 function skh_javascript_files(){
     wp_enqueue_script('main-skh', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', false);
+    wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . 'src/modules/BurgerMenu.js', array( 'jquery' ) );
 }
 
 add_action('wp_enqueue_scripts', 'skh_javascript_files');
