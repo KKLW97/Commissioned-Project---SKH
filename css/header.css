@@ -92,9 +92,10 @@ li a:hover {
   flex-direction: column;
 }
 
-.current-menu-item a,
-.current-menu-ancestor a,
-.current-menu-parent a {
+.current-menu-item > a,
+.current-menu-parent > a,
+.current-menu-ancestor > a,
+.current_page_parent > a {
   color: #B98663;
   text-decoration: underline;
 }
