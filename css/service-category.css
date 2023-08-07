@@ -1,6 +1,7 @@
 .service_category_summary > p{
     margin: 20px 50px;
     text-align: justify;
+    font-size: 20px;
 }
 
 .service_section{
@@ -32,11 +33,12 @@
 .description_left{
     grid-area: b;
     position: relative;
-    text-align: justify;
+    text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-size: 20px;
 }
 
 .single_service_right {
@@ -69,6 +71,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-size: 20px;
 }
 
 @media (max-width: 992px) {

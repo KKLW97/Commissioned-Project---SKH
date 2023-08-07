@@ -115,6 +115,10 @@ a {
   justify-content: center;
 }
 
+.image_left > img {
+  border-radius: 25px;
+}
+
 .details_right {
   flex-basis: 50%;
 }
