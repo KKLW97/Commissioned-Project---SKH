@@ -75,7 +75,7 @@
           </nav> -->
           <?php wp_nav_menu( array(
               'theme_location' => 'new-menu',
-              'menu_class'     => 'primary-menu',
+              'menu_class'     => 'primary-menu'
             ) );
           ?>
 

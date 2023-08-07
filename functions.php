@@ -92,5 +92,10 @@ function register_my_menu() {
     }
 add_action( 'init', 'register_my_menu' );
 
-
+function special_nav_class($classes, $item){
+    if( in_array('current-menu-item', $classes) || in_array('current-menu-ancestor', $classes) ){
+            $classes[] = 'active ';
+    }
+    return $classes;
+}
 ?>
