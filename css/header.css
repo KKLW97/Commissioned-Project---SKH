@@ -9,6 +9,15 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
+  @media (max-width: 992px) {
+    position: absolute;
+    box-shadow: none;
+    float: left;
+    background-color: transparent;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
 }
 
 .header_logo {
@@ -19,6 +28,9 @@ header {
   display: flex;
   justify-self: center;
   align-self: center;
+  @media (max-width: 992px) {
+    display: none;
+  }
 }
 
 .header_logo > img {
@@ -61,11 +73,6 @@ li a:hover {
   text-decoration: underline;
 }
 
-/* .dropdown {
-  float: left;
-  position: relative;
-} */
-
 .sub-menu {
   display: none;
   position: absolute;
@@ -104,4 +111,40 @@ li a:hover {
   @media screen and (max-width: 782px){
     margin-top: 0px !important;
   }
+}
+
+.mobile_nav {
+  display: none; 
+  font-size: 25px;
+  @media (max-width: 992px) {
+    display: flex;
+  }
+}
+
+.hidden_nav {
+  display: none;
+  @media (max-width: 992px) {
+    display: flex;
+  }
+}
+
+header > .menu-main-navigation-container  {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.hidden_nav > .menu-mobile-menu-container > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile_nav:hover > .hidden_nav {
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+  visibility: visible;
+  display: contents;
+}
+
+.mobile_nav > .hidden_nav {
+  display: none;
 }

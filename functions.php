@@ -86,6 +86,7 @@ add_action('get_header', 'remove_admin_login_header');
 
 function register_my_menu() {
     register_nav_menu('new-menu',__( 'New Menu' ));
+    register_nav_menu('mobile-menu',__( 'Mobile Menu' ));
     }
 add_action( 'init', 'register_my_menu' );
 

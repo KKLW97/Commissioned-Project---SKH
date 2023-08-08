@@ -21,12 +21,20 @@
       </div>
       <header>
             <a class="header_logo" href="<?php echo site_url();?>"><img src="<?php echo get_theme_file_uri('assets/RoseGoldLogo.png'); ?>" alt="SKH logo"></a>
-          <div class="header_nav">
-          <?php wp_nav_menu( array(
+            <?php wp_nav_menu( array(
               'theme_location' => 'new-menu',
               'menu_class'     => 'primary-menu'
             ) );
-          ?>
+           ?>
 
+        <div class="mobile_nav">
+          <i class="fa-solid fa-bars"></i>
+          <div class="hidden_nav">
+            <?php wp_nav_menu( array(
+                'theme_location' => 'mobile-menu',
+                'menu_class'     => 'primary-menu'
+              ) );
+            ?>
+          </div>
         </div>
       </header>
