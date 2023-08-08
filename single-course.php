@@ -111,10 +111,13 @@ $caption = $image['caption']; ?>
     )
   )
   ));
-
+  if($upcomingClasses->have_posts()) :
+  $post_count = 0;
   while($upcomingClasses->have_posts()){
     $upcomingClasses->the_post();
+    $post_count++;
     $trainers = get_field('course_trainer');
+
     // get_template_part('template-parts/content', 'class'); //refactor later to simplify the code below into a content-class.php file within a template-parts folder
     ?>
     <div class="upcoming_section">
@@ -133,11 +136,14 @@ $caption = $image['caption']; ?>
         </p>
         <p class="cafeaulait_text">Country: <?php echo get_field('country') ?></p>
       </div>
-    </div>
-  
-    <hr>
-  <?php }
-  wp_reset_query();
+    </div>    
+    <?php if ($post_count < $upcomingClasses->post_count) : ?>
+        <hr>
+        <?php endif; ?>
+    <?php
+  }
+ endif; ?>
+ <?php wp_reset_query();
 ?>
 </section>
 <div class="skh_contact">
