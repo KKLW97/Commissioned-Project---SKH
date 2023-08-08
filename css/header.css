@@ -99,3 +99,9 @@ li a:hover {
   color: #B98663;
   text-decoration: underline;
 }
+
+.admin-bar .rmp-container, .admin-bar .rmp_menu_trigger {
+  @media screen and (max-width: 782px){
+    margin-top: 0px !important;
+  }
+}
