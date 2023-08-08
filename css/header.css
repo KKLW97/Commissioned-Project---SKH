@@ -137,6 +137,8 @@ header > .menu-main-navigation-container  {
 .hidden_nav > .menu-mobile-menu-container > ul {
   display: flex;
   flex-direction: column;
+  padding: 0px 10px 5px 10px;
+  background-color: white;
 }
 
 .mobile_nav:hover > .hidden_nav {
@@ -147,4 +149,8 @@ header > .menu-main-navigation-container  {
 
 .mobile_nav > .hidden_nav {
   display: none;
+}
+
+.mobile_nav > i {
+  padding-right: 10px;
 }
