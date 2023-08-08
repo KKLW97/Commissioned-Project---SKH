@@ -20,7 +20,7 @@
         </ul>
       </div>
       <header>
-            <a class="header_logo" href="<?php echo site_url();?>"><img src="<?php echo get_theme_file_uri('assets/RoseGoldLogo.jpg'); ?>" alt="SKH logo"></a>
+            <a class="header_logo" href="<?php echo site_url();?>"><img src="<?php echo get_theme_file_uri('assets/RoseGoldLogo.png'); ?>" alt="SKH logo"></a>
           <div class="header_nav">
           <?php wp_nav_menu( array(
               'theme_location' => 'new-menu',
