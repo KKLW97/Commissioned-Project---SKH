@@ -15,17 +15,16 @@ function skh_theme_files () {
     wp_enqueue_style('team_css', get_theme_file_uri('css/team.css'));
     wp_enqueue_style('service_category_css', get_theme_file_uri('css/service-category.css'));
     wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v6.0.0/css/all.css');
-    // wp_enqueue_style('montserrat_font', 'fonts/Montserrat/Montserrat-VariableFont_wght.ttf', false);
 }
 
 add_action('wp_enqueue_scripts', 'skh_theme_files');
 
-function skh_javascript_files(){
-    wp_enqueue_script('main-skh', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', false);
-    wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . 'src/modules/BurgerMenu.js', array( 'jquery' ) );
-}
+// function skh_javascript_files(){
+//     wp_enqueue_script('main-skh', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', false);
+//     wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . 'src/modules/BurgerMenu.js', array( 'jquery' ) );
+// }
 
-add_action('wp_enqueue_scripts', 'skh_javascript_files');
+// add_action('wp_enqueue_scripts', 'skh_javascript_files');
 
 function add_google_fonts() {
     wp_enqueue_style('add_google_fonts', '//fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap', false);

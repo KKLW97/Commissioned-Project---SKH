@@ -58,7 +58,6 @@
 
         while($upcomingClasses->have_posts()){
             $upcomingClasses->the_post(); 
-            // get_template_part('template-parts/content', 'class'); //refactor later to simplify the code below into a content-class.php file within a template-parts folder
             ?>
         <div class="update_component">
             <div class="update_image">

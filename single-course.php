@@ -118,7 +118,6 @@ $caption = $image['caption']; ?>
     $post_count++;
     $trainers = get_field('course_trainer');
 
-    // get_template_part('template-parts/content', 'class'); //refactor later to simplify the code below into a content-class.php file within a template-parts folder
     ?>
     <div class="upcoming_section">
       <div class="class_info_left">
