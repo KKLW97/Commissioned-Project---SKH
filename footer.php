@@ -21,14 +21,14 @@
             </div>
             <div class="location_dubai">
                 <h5>DUBAI</h5>
-                <p>11-12 Gee's Ct</p>
-                <p>London</p>
-                <p>W1U 1JN</p>
+                <p>Atlantis, The Palm</p>
+                <p>Crescent Road</p>
+                <p>Dubai</p>
             </div>
             <div class="contact_section">
                 <h5> CONTACT </h5> 
                 <p><a class="contact" href="mailto:info@skh-london.com"> E: info@skh-london.com </a></p> 
-                <p><a class="contact" href="tel: +44 (238)4923084"> T: 02384923084 </a></p>
+                <p><a class="contact" href="tel: +44 (238)4923084"> T: 0208 810 1717 </a></p>
             </div>
             <div class="social_media">
                 <h5 class="footer_headers">CONNECT</h5>

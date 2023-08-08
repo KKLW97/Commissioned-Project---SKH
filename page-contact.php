@@ -41,7 +41,7 @@ get_header();
         <div class="contact_location">
             <ul>
                 <li><a class="contact" href="mailto:info@skh-london.com"><i class="fa-solid fa-envelope"></i><span class="icon_space">info@skh-london.com</a></li>
-                <li><a class="contact" href="tel: +44 (238)4923084"><i class="fa-solid fa-phone-volume"></i><span class="icon_space">02384923084</a></li>
+                <li><a class="contact" href="tel: +44 (238)4923084"><i class="fa-solid fa-phone-volume"></i><span class="icon_space">0208 810 1717</a></li>
                 <li><a href="https://shorturl.at/BEU06"><i class="fa-solid fa-calendar-days"></i><span class="icon_space">BOOK NOW</a></li>
             </ul>
         </div>
@@ -75,7 +75,7 @@ get_header();
             <div class="contact_location">
                 <ul>
                     <li><a class="contact" href="mailto:info@skh-london.com"><i class="fa-solid fa-envelope"></i><span class="icon_space">info@skh-london.com</a></li>
-                    <li><a class="contact" href="tel: +44 (238)4923084"><i class="fa-solid fa-phone-volume"></i><span class="icon_space">02384923084</a></li>
+                    <li><a class="contact" href="tel: +44 (238)4923084"><i class="fa-solid fa-phone-volume"></i><span class="icon_space"> +44 208 810 1717 </a></li>
                     <li><a href="https://shorturl.at/BEU06"><i class="fa-solid fa-calendar-days"></i><span class="icon_space">BOOK NOW</a></li>
                 </ul>
             </div>
