@@ -5,7 +5,7 @@ get_header();
 <section class="main_display">
 
     <section class="hero_slider">
-        <?php echo do_shortcode('[smartslider3 slider="2"]'); ?>
+        <?php echo do_shortcode('[smartslider3 slider="3"]'); ?>
     </section>
 
     <p class="announcement_bar beige_text center"><?php 
