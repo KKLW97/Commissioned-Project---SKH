@@ -8,3 +8,22 @@
     padding: 50px;
     border: 1px;
 }
+
+.woof_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop_area {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a b";
+}
+
+.filters_for_shop {
+    grid-area: a;
+}
+
+.shop_products_results {
+    grid-area: b;
+}
