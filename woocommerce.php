@@ -40,6 +40,7 @@ get_header();
 <div class="shop_area">
   <div class="filters_for_shop">
     <?php echo do_shortcode('[woof  sid="generator_64d389e97570c" autohide="0" autosubmit="-1" is_ajax="0" ajax_redraw="0" start_filtering_btn="0" btn_position="b" dynamic_recount="-1" hide_terms_count_txt="0" mobile_mode="0" ]'); ?>
+
   </div>
   <div class="shop_product_results">
     <?php woocommerce_content(); ?>

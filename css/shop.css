@@ -18,6 +18,8 @@
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-areas: "a b";
+    margin: 0px 50px;
+
 }
 
 .filters_for_shop {
@@ -26,4 +28,25 @@
 
 .shop_products_results {
     grid-area: b;
+}
+
+@media (max-width: 992px) {
+    .shop_area{
+        display: flex;
+        flex-direction: column;
+    }
+
+ .products{
+    grid-template-columns: 1fr !important;
+   }
+}
+
+.woocommerce-result-count{
+    display: flex;
+    justify-content: end;
+}
+
+.woocommerce-ordering {
+    display: flex;
+    justify-content: end;
 }
