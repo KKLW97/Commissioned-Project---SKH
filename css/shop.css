@@ -16,7 +16,7 @@
     margin-bottom: 20px;
 }
 
-.add_to_cart_button {
+.add_to_cart_button, .product_type_variable {
     color: white;
     background-color: #412920;
     padding: 10px;
@@ -24,7 +24,8 @@
     transition: background-color 1s !important;
 }
 
-.add_to_cart_button:hover {
+.add_to_cart_button:hover,
+.product_type_variable:hover {
     color: white;
     background-color: #A9846A;
     padding: 10px;
@@ -32,7 +33,9 @@
 }
 
 .add_to_cart_button:focus,
-.add_to_cart_button:active {
+.add_to_cart_button:active,
+.product_type_variable:focus,
+.product_type_variable:active {
   background-color: #412920 !important;
   transition: none !important;
 }
