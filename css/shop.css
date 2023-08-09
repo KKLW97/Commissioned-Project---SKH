@@ -7,14 +7,9 @@
 .product {
     text-align: center;
     padding: 10px 0;
-    /* border: 1px;
-    border-style: solid;
-    border-color: #412920; */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    /* background: linear-gradient(0deg, #412920 15%, #ffff 0%, #ffff 100%, #ffff 100%); */
-
 }
 
 .price, .woocommerce-LoopProduct-link {
@@ -28,6 +23,7 @@
     border-radius: 20px;
     transition: background-color 1s !important;
 }
+
 .add_to_cart_button:hover {
     color: white;
     background-color: #A9846A;
@@ -279,12 +275,6 @@ tr > .value {
 .cart_totals > .shop_table_responsive{
     display: flex;
     flex-direction: row-reverse;
-}
-
-.course_content > button, a {
-    text-decoration: none;
-    color: #A9846A;
-    margin: 10px;
 }
 
 .wc-proceed-to-checkout {
