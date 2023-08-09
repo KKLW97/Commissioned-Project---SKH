@@ -1,12 +1,30 @@
 .products{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .product {
     text-align: center;
-    padding: 50px;
+    padding: 20px 0;
     border: 1px;
+    border-style: solid;
+    border-color: #412920;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, #412920 15%, #ffff 0%, #ffff 100%, #ffff 100%);
+
+}
+
+.price, .woocommerce-LoopProduct-link {
+    margin-bottom: 20px;
+}
+
+.add_to_cart_button {
+    color: white;
+    background-color: #412920;
+    padding: 10px;
 }
 
 .woof_list {
