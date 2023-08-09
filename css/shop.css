@@ -436,3 +436,19 @@ table {
   background-color: #412920 !important;
   transition: none !important;
 }
+
+.product-remove > a {
+    color:#A9846A;
+}
+
+.product-name > a {
+    color:#A9846A;  
+}
+
+.showcoupon{
+    color:#A9846A;  
+}
+
+.woocommerce-privacy-policy-link{
+    color:#A9846A;  
+}
