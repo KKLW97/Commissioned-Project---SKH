@@ -11,6 +11,7 @@ function skh_theme_files () {
     wp_enqueue_style('general_css', get_theme_file_uri('css/general.css'));
     wp_enqueue_style('academy_css', get_theme_file_uri('css/academy.css'));
     wp_enqueue_style('contact_css', get_theme_file_uri('css/contact.css'));
+    wp_enqueue_style('shop_css', get_theme_file_uri('css/shop.css'));
     wp_enqueue_style('front_page_css', get_theme_file_uri('css/front-page.css'));
     wp_enqueue_style('team_css', get_theme_file_uri('css/team.css'));
     wp_enqueue_style('service_category_css', get_theme_file_uri('css/service-category.css'));
@@ -100,10 +101,41 @@ function special_nav_class($classes, $item){
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
    add_theme_support( 'woocommerce' );
+
+   if (class_exists('Woocommerce')){
+        add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+    }
 }   
 
-// if (class_exists('Woocommerce')){
-//     add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
-// }
+function mytheme_add_woocommerce_support() {
+    add_theme_support( 'woocommerce', array(
+    'thumbnail_image_width' => 300,
+    'single_image_width'    => 300,
+    // 'product_grid' => array(
+    //     'default_rows'    => 3,
+    //     'min_rows'        => 2,
+    //     'max_rows'        => 8,
+    //     'default_columns' => 4,
+    //     'min_columns'     => 2,
+    //     'max_columns'     => 3,
+    // ),
+    ),
+    );
+}
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
+
+function my_theme_wrapper_start() {
+    echo '<section id="main">';
+}
+
+function my_theme_wrapper_end() {
+    echo '</section>';
+}
 
 ?>
