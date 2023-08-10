@@ -33,7 +33,7 @@
 .description_left{
     grid-area: b;
     position: relative;
-    text-align: center;
+    text-align: justify;
     display: flex;
     justify-content: center;
     flex-direction: column;
