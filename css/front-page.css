@@ -14,18 +14,22 @@
   min-height: 100%;
 }
 
-.announcement_bar {
+.announcement_bar, .announcement_bar_top {
   min-height: 18px;
   color: #ffffff;
   margin: 0px;
   padding: 8px 50px;
   background-color: #412920;
   font-weight: lighter;
-  @media (max-width: 992px) {
+}
+@media (max-width: 992px) {
+  .announcement_bar_top{
     display: none;
+  }
+  .announcement_bar{
+    font-size: 20px !important;
+  }
 }
-}
-
 .container {
   width: 100%;
   margin: 10px auto;

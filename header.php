@@ -12,7 +12,7 @@
 
   <body <?php body_class(); ?>>
 
-      <div class="announcement_bar">
+      <div class="announcement_bar_top">
         <ul> 
           <li> LONDON </li>
           <li> DUBAI </li>
