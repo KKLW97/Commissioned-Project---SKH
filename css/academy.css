@@ -8,10 +8,6 @@ h1, h2 {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   justify-content: center;
-  @media (max-width: 992px) {
-    display: grid;
-    grid-template-columns: 1fr !important;
-}
 }
 
 .course_component {
@@ -92,14 +88,6 @@ a {
   padding-right: 50px;
   font-size: 25px;
   align-items: center;
-  @media (max-width: 992px) {
-    display: flex;
-    flex-direction: column;
-    font-size: 15px;
-    padding: 0px;
-    margin: 5%;
-    gap: 10px;
-}
 }
 
 .details_right > h5, h4 {
@@ -126,4 +114,20 @@ a {
 
 .details_right > p {
   text-align: justify;
+}
+
+@media (max-width: 992px) {
+  .course_section {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+
+  .trainer_section {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 0px;
+    margin: 5%;
+    gap: 10px;
+  }
 }

@@ -63,38 +63,6 @@
     grid-area: b;
 }
 
-@media (max-width: 992px) {
-    .shop_area{
-        display: flex;
-        flex-direction: column;
-    }
-
- .products{
-    grid-template-columns: 1fr !important;
-   }
-
-   .filters_for_shop {
-    margin-top: 50px;
-   }
-
-   .product-thumbnail{
-    display: none;
-}
-
-    .woocommerce-cart-form__contents > thead > tr > th {
-        display: none;
-    }
-
-    .woocommerce-cart-form__cart-item{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .product-subtotal {
-        display: none;
-    }
-}
-
 .woocommerce-result-count{
     display: flex;
     justify-content: end;
@@ -180,6 +148,7 @@ tr > .value {
     text-transform: uppercase !important;
     transition: background-color 1s !important;
 }
+
 .single_add_to_cart_button:hover{
     background-color: #A9846A !important;
 }
@@ -215,6 +184,7 @@ tr > .value {
     text-transform: uppercase !important;
     transition: background-color 1s !important;
 }
+
 .submit:hover{
     background-color: #A9846A !important;
 }
@@ -321,6 +291,7 @@ tr > td {
     text-transform: uppercase !important;
     transition: background-color 1s !important;
 }
+
 .coupon > .button:hover{
     background-color: #A9846A !important;
 }
@@ -376,6 +347,7 @@ table {
     text-transform: uppercase !important;
     transition: background-color 1s !important;
 }
+
 .actions > .button:hover{
     background-color: #A9846A !important;
 }
@@ -401,6 +373,7 @@ table {
     text-transform: uppercase !important;
     transition: background-color 1s !important;
 }
+
 .wc-proceed-to-checkout > .button :hover{
     background-color: #A9846A !important;
 }
@@ -410,7 +383,6 @@ table {
   background-color: #412920 !important;
   transition: none !important;
 }
-
 
 #place_order{
     margin: 10px;
@@ -427,6 +399,7 @@ table {
     text-transform: uppercase !important;
     transition: background-color 1s !important;
 }
+
 #place_order:hover{
     background-color: #A9846A !important;
 }
@@ -451,4 +424,36 @@ table {
 
 .woocommerce-privacy-policy-link{
     color:#A9846A;  
+}
+
+@media (max-width: 992px) {
+    .shop_area{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products{
+        grid-template-columns: 1fr !important;
+    }
+
+   .filters_for_shop {
+        margin-top: 50px;
+   }
+
+   .product-thumbnail{
+        display: none;
+    }
+
+    .woocommerce-cart-form__contents > thead > tr > th {
+        display: none;
+    }
+
+    .woocommerce-cart-form__cart-item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-subtotal {
+        display: none;
+    }
 }

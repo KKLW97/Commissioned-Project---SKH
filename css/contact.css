@@ -1,10 +1,6 @@
 .locations {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    @media (max-width: 992px) {
-        display: grid;
-        grid-template-columns: 1fr !important;
-  }
 }
 
 .map_container {
@@ -16,9 +12,6 @@
     "c d e";
     padding: 0 50px;
     margin: 0 5%;
-    @media (max-width: 992px) {
-        padding: 0%;
-  }
 }
 
 .address_container {
@@ -115,31 +108,18 @@
     max-height: 785px;
     background-color: #a9846a;
     border-radius: 25px;
-    @media (max-width: 992px) {
-        padding: 4%;
-        margin: 0%;
-        max-width: 360px;
-  }
 }
 
 .wpforms-container.contact_form {
     margin: 0 auto !important;
     max-width: 500px !important;
     width: 500px !important;
-    @media (max-width: 992px) {
-        max-width: 360px !important;
-  }
 }
  
 .contact_form .wpforms-submit-container  {
     display: inline-block;
     text-align: center;
     width: 100% !important;
-    @media (max-width: 992px) {
-        margin-top: 0px !important;
-        padding-top: 0px !important;
-
-  }
 }
  
 .contact_form .wpforms-field-pagebreak  {
@@ -180,4 +160,30 @@
 .wpforms-field-label, 
 .wpforms-container .wpforms-form label {
     color: #FAF0E6 !important;
+}
+
+@media (max-width: 992px) {
+    .locations {
+        display: grid;
+        grid-template-columns: 1fr !important;
+    }
+
+    .map_container {
+        padding: 0%;
+    }
+
+    .overall_form {
+        padding: 4%;
+        margin: 0%;
+        max-width: 360px;
+    }
+
+    .wpforms-container.contact_form {
+        max-width: 360px !important;
+    }
+
+    .contact_form .wpforms-submit-container  {
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+    }
 }

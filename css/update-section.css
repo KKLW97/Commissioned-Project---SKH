@@ -1,6 +1,5 @@
 .upcoming_classes {
     display: grid;
-    /* grid-template-columns: 20% 60% 20%; */
     grid-template-areas: 
     "a"
     "b"
@@ -19,10 +18,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     justify-content: center;
-    @media (max-width: 992px) {
-        display: grid;
-        grid-template-columns: 1fr !important;
-  }
 }
 
 .update_component {
@@ -129,4 +124,11 @@
 .enquire_btn:active {
   background-color: #412920;
   transition: none;
+}
+
+@media (max-width: 992px) {
+    .update_section {
+        display: grid;
+        grid-template-columns: 1fr !important;
+    }
 }

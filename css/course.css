@@ -21,13 +21,6 @@
     align-items: baseline;
     justify-content: end;
     padding-right: 15%;
-    @media (max-width: 992px) {
-        display: flex  !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-        padding: 0px;
-    }
 }
 
 .course_price > p {
@@ -53,13 +46,6 @@
     padding-left: 50px;
     padding-right: 50px;
     gap: 50px;
-    @media (max-width: 992px) {
-        width: 100% !important;
-        padding: 0px;
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 0px;
-    }
 }
 
 .course_lash_kit{
@@ -71,9 +57,6 @@
     grid-template-areas: 
     "a"
     "b";
-    @media (max-width: 992px) {
-        padding: 0px;
-    }
 }
 
 .course_lash_kit > img {
@@ -103,9 +86,6 @@
     margin: 10px 0px;
     text-align: center;
     color: #A9846A;
-    @media (max-width: 992px) {
-        margin: 0px !important;
-    }
 }
 
 .kit_content > ul{
@@ -122,18 +102,11 @@
     display: list-item;
     list-style-type: disc;
     list-style-position: inside;
-    @media (max-width: 992px) {
-        margin: 0px !important;
-        padding: 0px;
-    }
 }
   
 .kit_content {
     flex-basis: 50%;
     font-size: 20px;
-    @media (max-width: 992px) {
-        flex-basis: 100%;
-    }
 }
 
 .banner {
@@ -196,12 +169,6 @@
     padding-right: 50px;
     font-size: 25px;
     align-items: center;
-    @media (max-width: 992px) {
-        width: 100% !important;
-        padding: 0px;
-        margin: 0px;
-        flex-direction: column;
-    }
 }
 
 .class_info_right {
@@ -228,10 +195,6 @@
 .class_info_left > img {
     max-width: 100%;
     max-height: 100px;
-    @media (max-width: 992px) {
-        max-width: 90%;
-        max-height: 100px;
-    }
 }
 
 .class_info_left {
@@ -289,10 +252,6 @@ hr {
     font-weight: 300;
     font-size: 20px;
     gap: 5px;
-    @media (max-width: 992px) {
-        margin: 10px !important;
-        padding: 0%;
-    }
 }
 
 .course_structure {
@@ -309,4 +268,56 @@ hr {
 
 .class_info_right > h6 {
     color: #412920;
+}
+
+@media (max-width: 992px) {
+    .course_price {
+        display: flex  !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0px;
+    }
+
+    .course_kit {
+        width: 100% !important;
+        padding: 0px;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0px;
+    }
+
+    .course_lash_kit{
+        padding: 0px;
+    }
+
+    .kit_content {
+        flex-basis: 100%;
+    }
+
+    .kit_content > p {
+        margin: 0px !important;
+    }
+
+    .kit_content > ul > li{
+        margin: 0px !important;
+        padding: 0px;
+    }
+
+    .class_info_left > img {
+        max-width: 90%;
+        max-height: 100px;
+    }
+
+    .upcoming_section {
+        width: 100% !important;
+        padding: 0px;
+        margin: 0px;
+        flex-direction: column;
+    }
+
+    .course_structure > ul {
+        margin: 10px !important;
+        padding: 0%;
+    }
 }
