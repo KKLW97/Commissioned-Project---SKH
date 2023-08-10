@@ -35,6 +35,7 @@ h1, h2 {
   width: fit-content;
   display: grid;
   grid-template-columns: 1fr;
+  text-align: center;
 }
 
 .course_content > h3 {
