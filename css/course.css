@@ -150,6 +150,7 @@
 .banner_course_structure_list {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .banner_course_structure_list > ul {
