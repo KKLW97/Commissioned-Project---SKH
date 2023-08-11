@@ -82,10 +82,11 @@ a {
 }
 
 .trainer_section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
   width: 90%;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin: 0px 50px;
   font-size: 25px;
   align-items: center;
 }

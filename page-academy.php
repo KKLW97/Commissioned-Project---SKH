@@ -32,28 +32,26 @@
     ?>
 </section> 
 
-<h2 class="cocoa_text">OUR TRAINER</h2>
-<section class="trainer_section ">
+<h2 class="cocoa_text">OUR TRAINERS</h2>
+<section class="trainer_section">
 <?php 
     $upcomingClasses = new WP_Query(array(
-        'posts_per_page' => 1,
+        'posts_per_page' => -1,
         'post_type' => 'trainers',
-        'meta_key' => 'company_position',
-        'meta_value' => 'Founder',
-        'meta_compare' => 'LIKE'
+        'order' => 'ASC'
     ));
 
     while($upcomingClasses->have_posts()){
         $upcomingClasses->the_post(); ?>
-        <div class="image_left">
-          <?php the_post_thumbnail('trainerPortrait') ?>
-        </div>
+          <div class="image_left">
+            <?php the_post_thumbnail('trainerPortrait') ?>
+          </div>
 
-        <div class="details_right">
-          <?php echo '<h4 class="cafeaulait_text "> ' . get_the_title() .' </h4>' ?>
-          <h5 class="cafeaulait_text "> <?php echo get_field('company_position')?> </h5>
-        <p class="cocoa_text"><?php echo get_field('trainer_details')?></p>
-      </div>
+          <div class="details_right">
+            <?php echo '<h4 class="cafeaulait_text "> ' . get_the_title() .' </h4>' ?>
+            <h5 class="cafeaulait_text "> <?php echo get_field('company_position')?> </h5>
+          <p class="cocoa_text"><?php echo get_field('trainer_details')?></p>
+        </div>
     <?php } 
       wp_reset_postdata();
       ?>

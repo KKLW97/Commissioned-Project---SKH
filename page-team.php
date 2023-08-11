@@ -17,7 +17,7 @@ get_header();
     while($founder->have_posts()){
         $founder->the_post(); ?>
         <div class="image_left founder_image">
-          <?php the_post_thumbnail('trainerPortrait') ?>
+          <?php the_post_thumbnail() ?>
         </div>
 
         <div class="details_right">

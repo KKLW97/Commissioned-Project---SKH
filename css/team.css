@@ -83,4 +83,9 @@
     .single_member {
         width: 355px !important;
     }
+
+    .founder_image > img {
+        height: 50%;
+        width: 90%;
+    }
 }

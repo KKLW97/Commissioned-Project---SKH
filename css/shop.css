@@ -384,6 +384,31 @@ table {
   transition: none !important;
 }
 
+.product_type_simple {
+    margin: 10px;
+    background-color: #412920 !important;
+    color: white !important;
+    font-weight: 400 !important;
+    font-stretch: ultra-condensed !important;
+    border-radius: 15px !important;
+    border-width: 0 !important;
+    display: inline-block !important;
+    font-size: 15px !important;
+    letter-spacing: 0.1em !important;
+    padding: 8px 50px !important;
+    transition: background-color 1s !important;
+}
+
+.product_type_simple:hover{
+    background-color: #A9846A !important;
+}
+
+.product_type_simple:focus,
+.product_type_simple:active {
+  background-color: #412920 !important;
+  transition: none !important;
+}
+
 #place_order{
     margin: 10px;
     background-color: #412920 !important;
