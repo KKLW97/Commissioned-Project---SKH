@@ -3,33 +3,38 @@
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php wp_head(); ?>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&family=Montserrat:wght@200&family=Pontano+Sans:wght@300;600;700&family=Roboto:wght@100&display=swap');
+    </style> 
+
+<?php wp_head(); ?>
   </head> 
 
   <body <?php body_class(); ?>>
-      <div class="announcement_bar">
+
+      <div class="announcement_bar_top">
         <ul> 
-          <li>info@skh-london.com</li>
-          <li>+ 44 (0) 20 8810 1717</li>
-          <li>s.k.hbeauty</li>
+          <li> LONDON </li>
+          <li> DUBAI </li>
+          <li> TURKEY (Coming Soon) </li>
         </ul>
       </div>
       <header>
-          <div class="center">
-            <a class="header_logo" href="<?php echo site_url();?>"><img src="<?php echo get_theme_file_uri('assets/RoseGoldLogo.jpg'); ?>" alt="SKH logo"></a>
-          </div>
+            <a class="header_logo" href="<?php echo site_url();?>"><img src="<?php echo get_theme_file_uri('assets/RoseGoldLogo.png'); ?>" alt="SKH logo"></a>
+            <?php wp_nav_menu( array(
+              'theme_location' => 'new-menu',
+              'menu_class'     => 'primary-menu'
+            ) );
+           ?>
 
-          <nav>
-            <ul>
-              <li <?php if(is_page('updates')) echo 'class="current_menu_item"' ?>><a href="#"> Updates </a></li>
-              <li <?php if(is_page('london')) echo 'class="current_menu_item"' ?>><a href="#"> London </a></li>
-              <li <?php if(is_page('dubai')) echo 'class="current_menu_item"' ?>><a href="#"> Dubai </a></li>
-              <li <?php if(is_page('shop')) echo 'class="current_menu_item"' ?>><a href="#"> Shop </a></li>
-              <li <?php if(is_page('team')) echo 'class="current_menu_item"' ?>><a href="#"> Team </a></li>
-              <li <?php if(is_page('contact')) echo 'class="current_menu_item"' ?>><a href="#"> Contact </a></li>
-              <li <?php if(is_page('book')) echo 'class="current_menu_item"' ?>><a href="#"> Book </a></li>
-            </ul>
-          </nav>
+        <div class="mobile_nav">
+          <i class="fa-solid fa-bars"></i>
+          <div class="hidden_nav">
+            <?php wp_nav_menu( array(
+                'theme_location' => 'mobile-menu',
+                'menu_class'     => 'primary-menu'
+              ) );
+            ?>
+          </div>
+        </div>
       </header>
-    
-        

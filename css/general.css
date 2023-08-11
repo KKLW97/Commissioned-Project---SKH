@@ -1,39 +1,67 @@
-.earthy_brown_text{
-    color: #85453C
+body {
+  font-family: 'Pontano Sans', sans-serif;
+  letter-spacing: 0.05em;
 }
 
-.earthy_brown_background{
-    background-color: #85453C;
+.black_text {
+  color: #0e1111;
 }
 
-.muted_pink_text{
-    color: #C48983;
+.black_background {
+  background-color: #0e1111;
 }
 
-.muted_pink_background{
-    background-color: #C48983;
+.cocoa_text {
+  color: #412920;
 }
 
-.dark_red_brown_text{
-    color: #310003;
+.cocoa_background {
+  background-color: #412920;
 }
 
-.dark_red_brown_background{
-    background-color: #310003;
+.cafeaulait_text {
+  color: #a9846a;
 }
 
-.soft_pink_text{
-    color: #DC9B99;
+.cafeaulait_background {
+  background-color: #a9846a;
 }
 
-.soft_pink_background{
-    background-color: #DC9B99;
+.taupe_text {
+  color: #b98663;
 }
 
-.chocolate_brown_text{
-    color: #601E12;
+.taupe_background {
+  background-color: #b98663;
 }
 
-.chocolate_brown_background{
-    background-color: #601E12;
+.beige_text {
+  color: #faf0e6;
+}
+
+.beige_background {
+  background-color: #faf0e6;
+}
+
+.center {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Stint Ultra Expanded', cursive;
+  text-transform: uppercase;
+  color: #412920;
+}
+
+.static_hero_image {
+  height: 500px;
+  /* overflow: hidden; */
+}
+
+.static_hero_image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  
 }
