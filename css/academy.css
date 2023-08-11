@@ -17,6 +17,9 @@ h1, h2 {
   position: relative;
   display: grid;
   place-content: center;
+  z-index: -2;
+  background-color: #412920;
+  border-radius: 25px;
 }
 
 .course_image {
