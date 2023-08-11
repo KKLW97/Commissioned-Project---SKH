@@ -247,7 +247,7 @@ hr {
 .course_structure > ul {
     display: flex;
     flex-direction: column;
-    padding-left: 28%;
+    text-align: center;
     color: #a9846a;
     font-weight: 300;
     font-size: 20px;
